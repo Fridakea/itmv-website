@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+/* Font sizes on pc */
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.25rem;
+}
+
+/* Hide on pc or show only on pc */
+.pc-hide {
+    display: none;
+}
+
+.pc-only {
+    display: inline-block;
+}
+}

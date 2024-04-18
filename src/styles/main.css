@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Helvetica'), url('/Helvetica.woff') format('woff');
+}
+
+/* Variables */
+:root {
+    --primary-color: #F1F0EC;
+    --secondary-color: #546B54;
+    --action-color: #D75636;
+  
+    --spacing-small: 16px;
+    --spacing-medium: 32px;
+    --spacing-large: 48px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: "Helvetica", sans-serif;
+  }
+
+/* Styling for fonts */
+h1, h2, h3, h4 {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.25rem;
+}
+
+h4 {
+    font-size: 1rem;
+}
+
+p {
+    font-size: 1rem;
+}
+
+
+/* General classnames */
+/* Gives all content within this class a max-width */
+.content {
+    max-width: 1200px;
+    padding: var(--spacing-medium);
+    margin: auto;
+}
