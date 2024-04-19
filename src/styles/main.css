@@ -5,6 +5,11 @@
     src: local('Helvetica'), url('/Helvetica.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Headline';
+    src: local(), url(/public/fonts/Neue\ Regrade\ Bold.woff2)
+}
+
 /* Variables */
 :root {
     --primary-color: #F1F0EC;
@@ -29,6 +34,7 @@
 h1, h2, h3, h4 {
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Headline';
 }
 
 h1 {
