@@ -83,10 +83,6 @@ p {
     justify-content: center;
 }
 
-.flex-align-center {
-    align-self: center;
-}
-
 .flex-space-between {
     justify-content: space-between;
 }
