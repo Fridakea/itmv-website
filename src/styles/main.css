@@ -14,6 +14,7 @@
 :root {
     --primary-color: #F1F0EC;
     --secondary-color: #546B54;
+    --secondary-shade-color: rgba(84,107,84,75%);
     --action-color: #D75636;
   
     --spacing-small: 16px;
@@ -21,7 +22,7 @@
     --spacing-large: 48px;
 }
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -64,4 +65,66 @@ p {
     max-width: 1200px;
     padding: var(--spacing-medium);
     margin: auto;
+}
+
+/* Classnames for flex, grid and alignment */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    align-self: center;
+    justify-content: center;
+}
+
+.flex-align-center {
+    align-self: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* Gap and spacing */
+.gap-s {
+    gap: var(--spacing-small);
+}
+
+.gap-m {
+    gap: var(--spacing-medium);
+}
+
+.gap-l {
+    gap: var(--spacing-large);
+}
+
+/* Margin button and top */
+.mb-m {
+    margin-bottom: var(--spacing-medium);
+}
+
+.mb-l {
+    margin-bottom: var(--spacing-large);
+}
+
+.mt-m {
+    margin-top: var(--spacing-medium);
+}
+
+.mt-l {
+    margin-top: var(--spacing-large);
 }

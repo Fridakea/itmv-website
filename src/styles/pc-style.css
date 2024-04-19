@@ -24,4 +24,19 @@ h4 {
 .pc-only {
     display: inline-block;
 }
+
+/* General classnames for pc */
+.pc-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.pc-flex-align-center {
+    align-self: center;
+}
 }
