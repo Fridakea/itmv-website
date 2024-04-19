@@ -13,8 +13,10 @@
 /* Variables */
 :root {
     --primary-color: #F1F0EC;
+    --primary-shade-color: #ffffff;
     --secondary-color: #546B54;
     --secondary-shade-color: rgba(84,107,84,75%);
+    --secondary-shade-color-light: rgba(84,107,84,50%);
     --action-color: #D75636;
   
     --spacing-small: 16px;
