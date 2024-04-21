@@ -15,8 +15,9 @@
     --primary-color: #F1F0EC;
     --primary-shade-color: #ffffff;
     --secondary-color: #546B54;
-    --secondary-shade-color: rgba(84,107,84,75%);
-    --secondary-shade-color-light: rgba(84,107,84,50%);
+    --secondary-color-shade: rgba(84,107,84,75%);
+    --secondary-color-shade-light: rgba(84,107,84,50%);
+    --secondary-color-shade-dark: #3E4E3E;
     --action-color: #D75636;
   
     --spacing-small: 16px;
@@ -31,7 +32,12 @@ body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: "Helvetica", sans-serif;
-  }
+}
+
+img, image {
+    width: 100%;
+    height: auto;
+}
 
 /* Styling for fonts */
 h1, h2, h3, h4, summary {

@@ -1,12 +1,15 @@
 ---
 import { Image } from "astro:assets";
-import localFabricImage from "../images/fabric.jpg";
+import localFabricImage from "../images/fabric.JPG";
+import localFabricDyingImage from "../images/fabric-dying.JPG";
 ---
 
-<div class="flex-col">
-  <!--<Image src={localFabricImage} alt="En masse stof samlet på en reol" /> -->
+<section class="flex-col pc-flex-row gap-l mb-l mt-l">
+  <div class="flex-1">
+    <Image src={localFabricImage} alt="En masse stof samlet på en reol" />
+  </div>
 
-  <div>
+  <div class="flex-center flex-1">
     <details>
       <summary>Lad os sammen løfte en vigtig opgave</summary>
       <p>
@@ -167,8 +170,17 @@ import localFabricImage from "../images/fabric.jpg";
       </p>
     </details>
   </div>
+</section>
 
-  <div>
+<section class="flex-col pc-flex-row-reverse gap-l">
+  <div class="flex-1">
+    <Image
+      src={localFabricDyingImage}
+      alt="Billede af tøj som bliver farvet vha. plantefarve"
+    />
+  </div>
+
+  <div class="flex-center flex-1">
     <details>
       <summary>Hvad er en socialøkonomisk virksomhed?</summary>
       <p>
@@ -255,7 +267,7 @@ import localFabricImage from "../images/fabric.jpg";
       >
     </details>
   </div>
-</div>
+</section>
 
 <style>
   details {
@@ -264,6 +276,32 @@ import localFabricImage from "../images/fabric.jpg";
     & summary {
       cursor: pointer;
       padding: calc(var(--spacing-small) / 2) var(--spacing-small);
+      transition: 0.2s ease-in-out;
+    }
+  }
+
+  details summary:hover {
+    color: var(--secondary-color-shade);
+    scale: 1.02;
+  }
+
+  img {
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+
+  @media (min-width: 768px) {
+    img {
+      aspect-ratio: auto;
+      height: 100%;
+    }
+
+    details summary {
+      padding: var(--spacing-small) var(--spacing-small);
+    }
+
+    .flex-1 {
+      flex: 1;
     }
   }
 </style>
