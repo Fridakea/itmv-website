@@ -34,7 +34,7 @@ body {
   }
 
 /* Styling for fonts */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, summary {
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Headline';
@@ -48,7 +48,7 @@ h2 {
     font-size: 1.5rem;
 }
 
-h3 {
+h3, summary {
     font-size: 1.25rem;
 }
 
@@ -58,6 +58,11 @@ h4 {
 
 p {
     font-size: 1rem;
+}
+
+a {
+    font-weight: 200;
+    color: var(--secondary-color);
 }
 
 
