@@ -7,7 +7,7 @@
 
 @font-face {
     font-family: 'Headline';
-    src: local(), url(/public/fonts/Neue\ Regrade\ Bold.woff2)
+    src: local(), url('/Neue-Regrade-Bold.woff2')
 }
 
 /* Variables */
