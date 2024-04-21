@@ -6,8 +6,8 @@
 }
 
 @font-face {
-    font-family: 'Headline';
-    src: local(), url('/Neue-Regrade-Bold.woff2')
+    font-family: 'Neue-Regrade';
+    src: local('Neue-Regrade'), url('/Neue-Regrade-Bold.woff2') format('woff');
 }
 
 /* Variables */
@@ -37,7 +37,7 @@ body {
 h1, h2, h3, h4, summary {
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Headline';
+    font-family: 'Neue-Regrade';
 }
 
 h1 {
