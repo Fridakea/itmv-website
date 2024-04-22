@@ -5,7 +5,7 @@ import localSewingWomen from "../images/women-working.png";
 import localWomen from "../images/women.png";
 ---
 
-<div class="flex-col pc-flex-row pc-gap-m pc-space-between">
+<div class="flex-col pc-flex-row pc-gap-m pc-space-between mb-l">
   <div class="parent flex-center">
     <Image src={localClothesPile} alt="En bunke med tøj" />
     <div class="text-box placement-top">
@@ -73,13 +73,12 @@ import localWomen from "../images/women.png";
 
   @media (min-width: 768px) {
     .parent {
-      max-height: 350px;
       margin: 0;
-    }
 
-    .text-box {
-      width: 215px;
-      padding: var(--spacing-small) var(--spacing-small);
+      & .text-box {
+        width: 215px;
+        padding: var(--spacing-small) var(--spacing-small);
+      }
     }
   }
 </style>
