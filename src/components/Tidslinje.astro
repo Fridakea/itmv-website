@@ -3,12 +3,28 @@ import "../styles/main.css";
 ---
 
   <div>
-    <img src="img/stipletlinje.svg" alt="Snoet stiplet grøn ITMV tidslinje" />
+    <img src="img/stipletlinje.svg" alt="Snoet stiplet grøn ITMV tidslinje" class="timeline" />
   </div>
 
   <style>
-
+.timeline{
+  height: 20rem;
+  /* width: 38rem; */
+  transform: rotate(90deg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 14rem;
+  margin-bottom: 14rem;
+}
     
+
+@media (min-width: 768px) {
+  .timeline{
+  transform: rotate(0deg);
+
+}
+}
   </style>
   
 
