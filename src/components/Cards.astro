@@ -1,6 +1,15 @@
 ---
 import { preprocess } from "astro/zod";
+
 import { Image } from "astro:assets";
+import itmvIshojImage from "../images/ishoj_itmv.jpg";
+import itmvRodovreImage from "../images/rodovre_itmv.jpg";
+import itmvGladsaxe1Image from "../images/gladsaxe1itmv.jpg";
+import itmvGladsaxe2Image from "../images/gladsaxe2_itmv.jpg";
+import itmvAmagerImage from "../images/amager_itmv.jpg";
+import itmvNorrebroImage from "../images/norrebro1_itmv.jpg";
+import itmvFarumImage from "../images/farum_itmv.jpg";
+import itmvNorrebro2Image from "../images/norrebro2_itmv.jpg";
 
 /*const year = Astro.props.year;
 const city = Astro.props.city;
@@ -10,7 +19,25 @@ const text = Astro.props.text;
 const { year, city } = Astro.props;
 ---
 
-<!-- main -->
+
+<div class="img_city">
+    <Image src={itmvIshojImage} alt="Socialboliger i Ishøj kommune" />
+  
+    <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
+  
+    <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
+  
+    <Image src={itmvGladsaxe2Image} alt="RSV icon" />
+ 
+    <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
+
+    <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
+  
+    <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
+ 
+    <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
+  </div>
+
 <article>
   <h3>{year}</h3> <h4>{city}</h4>
   <p>{text}</p>
@@ -19,3 +46,8 @@ const { year, city } = Astro.props;
   </b>
   <p>{text}</p>
 </article>
+
+
+
+
+  
