@@ -2,9 +2,7 @@
 
 ---
 
-<marquee>
-  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
-  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+<marquee scrollamount="5" loop>
   samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
   samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
   samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
@@ -29,3 +27,7 @@
     color: var(--secondary-color);
   }
 </style>
+<script>
+  let elements = document.getElementsByTagName("marquee");
+  Array.from(elements).forEach((el) => el.start());
+</script>
