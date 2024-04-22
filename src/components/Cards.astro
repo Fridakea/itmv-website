@@ -16,38 +16,57 @@ const city = Astro.props.city;
 const text = Astro.props.text; 
 - kan også skrives således*/
 
-const { year, city } = Astro.props;
+const { year } = Astro.props;
 ---
 
 
-<div class="img_city">
-    <Image src={itmvIshojImage} alt="Socialboliger i Ishøj kommune" />
-  
-    <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
-  
-    <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
-  
-    <Image src={itmvGladsaxe2Image} alt="RSV icon" />
- 
-    <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
-
-    <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
-  
-    <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
- 
-    <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
-  </div>
-
 <article>
+<slot />
+</article>
+<!-- 
+<article>
+  <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
   <h3>{year}</h3> <h4>{city}</h4>
   <p>{text}</p>
-  </b>
+</article>
+
+<article>
+  <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
+  <h3>{year}</h3> <h4>{city}</h4>
   <p>{text}</p>
-  </b>
+</article>
+
+<article>
+  <Image src={itmvGladsaxe2Image} alt="RSV icon" />
+  <h3>{year}</h3> <h4>{city}</h4>
+  <p>{text}</p>
+</article>
+
+<article>
+  <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
+  <h3>{year}</h3> <h4>{city}</h4>
+  <p>{text}</p>
+</article>
+
+<article>
+  <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
+  <h3>{year}</h3> <h4>{city}</h4>
+  <p>{text}</p>
+</article>
+
+<article>
+  <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
+  <h3>{year}</h3> <h4>{city}</h4>
+  <p>{text}</p>
+</article>
+
+<article>
+  <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
+  <h3>{year}</h3> <h4>{city}</h4>
   <p>{text}</p>
 </article>
 
 
 
 
-  
+   -->
