@@ -17,9 +17,14 @@ import "../styles/pc-style.css";
       <p>3520 Farum</p>
     </div>
 
-    <div class="align-center flex-center">
-      <img src="./img/instagram-icon.svg" alt="Instagram ikon" />
-      <img src="./img/facebook-icon.svg" alt="Facebook ikon" />
+    <div class="icons">
+      <a href="https://www.instagram.com/itraadmedverden/"
+        ><img src="./img/instagram-icon.svg" alt="Instagram ikon" /></a
+      >
+      <a
+        href="https://www.facebook.com/p/I-Tra%CC%8Ad-Med-Verden-100063621456557/?locale=da_DK"
+        ><img src="./img/facebook-icon.svg" alt="Facebook ikon" /></a
+      >
     </div>
 
     <div class="align-right pc-flex-align-center">
@@ -46,6 +51,31 @@ import "../styles/pc-style.css";
         var(--spacing-medium);
       & div {
         margin-bottom: var(--spacing-large);
+      }
+    }
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    gap: var(--spacing-medium);
+
+    & img {
+      height: 35px;
+      transition: 0.2s;
+    }
+
+    & img:hover {
+      scale: 1.1;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .icons {
+      & img {
+        height: 45px;
       }
     }
   }
