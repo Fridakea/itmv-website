@@ -8,12 +8,12 @@ h2 {
     font-size: 2rem;
 }
 
-h3 {
+h3, summary {
     font-size: 1.5rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 /* Hide on pc or show only on pc */
@@ -23,5 +23,29 @@ h4 {
 
 .pc-only {
     display: inline-block;
+}
+
+/* General classnames for pc */
+.pc-flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.pc-flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.pc-flex-row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.pc-flex-align-center {
+    align-self: center;
+}
+
+.pc-space-between {
+    justify-content: space-between;
 }
 }
