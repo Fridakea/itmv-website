@@ -2,91 +2,94 @@
 import "../styles/main.css";
 ---
 
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon1" />
-  </div>
+<div class="heart-icon" id="hearticon1">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
 
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon2" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon3" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon4" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon5" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon6" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon7" />
-  </div> 
-  
-  <div>
-    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" class="hearticon8" />
-  </div> 
+<div class="heart-icon" id="hearticon2">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon3">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon4">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon5">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon6">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon7">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+<div class="heart-icon" id="hearticon8">
+  <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+</div>
+
+  <article id="animation_13">
+    <div class="animation">
+      <div id="ball_13" class="ball pulse"></div>
+    </div>
+    
+  </article>
   
 
   <style>
-    .hearticon1,
-    .hearticon2,
-    .hearticon3,
-    .hearticon4,
-    .hearticon5,
-    .hearticon6,
-    .hearticon7, 
-    .hearticon8 {
-      max-width: 3.3rem;
-    }
-
-
-    .hearticon1 {
+   .heart-icon {
+      width: 6.3rem;
       position: absolute;
-      margin-top: -39.5rem;
-      margin-left: 16rem;
+      animation-name: hearticon-animation;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+}
+@keyframes hearticon-animation {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+    #hearticon1 {
+      margin-top: -48rem;
+      margin-left: 16.7rem;
     }
-    .hearticon2 {
-      position: absolute;
-      margin-top: -38.7rem;
-      margin-left: 10rem;
+    #hearticon2 {
+      margin-top: -46.7rem;
+      margin-left: 7.5rem;
     }
-    .hearticon3 {
-      position: absolute;
-      margin-top: -34rem;
+    #hearticon3 {
+      margin-top: -39rem;
       margin-left: 8.2rem;
     }
-    .hearticon4 {
-      position: absolute;
-      margin-top: -31rem;
+    #hearticon4 {
+      margin-top: -36rem;
       margin-left: 16rem;
     }
-    .hearticon5 {
-      position: absolute;
-      margin-top: -27rem;
-      margin-left: 11.5rem;
+    #hearticon5 {
+      margin-top: -33rem;
+      margin-left: 10.5rem;
     }
-    .hearticon6 {
-      position: absolute;
-      margin-top: -21rem;
+    #hearticon6 {
+      margin-top: -24.8rem;
       margin-left: 9.4rem;
     }
-    .hearticon7 {
-      position: absolute;
-      margin-top: -16.2rem;
-      margin-left: 15.2rem;
+    #hearticon7 {
+      margin-top: -18.9rem;
+      margin-left: 14.7rem;
     }
-    .hearticon8 {
-      position: absolute;
+    #hearticon8 {
       margin-top: -12.5rem;
-      margin-left: 9rem;
+      margin-left: 6rem;
     }
 
 
