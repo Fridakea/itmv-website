@@ -1,10 +1,79 @@
 ---
-
+import "../styles/main.css";
 ---
 
-<div class="top_section">
-  <h2>I TRÅD MED VERDEN</h2>
-  <p>er en socialøkonomisk virksomhed som arbejder med design og genanvendelse af kasserede 
-    tekstiler med omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for 
-    mennesker, som har mistet fodfæste på arbejdsmarkedet.</p>
+<div class="top_section">  
+    <img src="img/bracketLeft.png" alt="Brackets" class="bracket-left" />
+    <p><span class="bold">I TRÅD MED VERDEN</span> er en socialøkonomisk virksomhed som arbejder med design og genanvendelse af kasserede 
+        tekstiler med omdrejningspunkt for at skabe jobmuligheder, netværk og livskvalitet for 
+        mennesker, som har mistet fodfæste på arbejdsmarkedet.</p>
+    <img src="img/bracketRight.png" alt="Brackets" class="bracket-right" />
 </div>
+
+<style>
+
+.top_section {     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2rem;
+    padding: 5rem 3rem 5rem 3rem;
+    } 
+p .bold {
+    font-size: xx-large;
+    text-align: left;
+}
+.bracket-left, .bracket-right {
+    max-height: 20rem;
+    max-width: 7rem;
+    padding: 2rem;
+    position: absolute;
+    margin-top: -3.5rem;
+}
+.bracket-left {
+margin-right: 26rem;
+}
+.bracket-right {
+margin-left: 26rem;
+} 
+@media (min-width: 768px) {
+    .top_section {     
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: 2rem;
+    padding: 10rem 14rem 10rem 14rem;
+    /* background-color: aqua; */
+    } 
+.bracket-left, .bracket-right {
+    max-height: 20rem;
+    max-width: 7rem;
+    padding: 2rem;
+    position: absolute;
+    margin-top: -6rem;
+} 
+.bracket-left {
+margin-right: 46rem;
+}
+.bracket-right {
+margin-left: 46rem;
+}   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
