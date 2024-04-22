@@ -43,6 +43,10 @@ img, image {
 }
 
 /* Styling for fonts */
+h1, h2, h3, h4, summary, p, a {
+    margin-bottom: var(--spacing-small);
+}
+
 h1, h2, h3, h4, summary {
     font-weight: bold;
     text-transform: uppercase;
@@ -51,6 +55,7 @@ h1, h2, h3, h4, summary {
 
 h1 {
     font-size: 2rem;
+    margin-bottom: var(--spacing-medium);
 }
 
 h2 {
@@ -73,7 +78,6 @@ a {
     font-weight: 200;
     color: var(--secondary-color);
 }
-
 
 /* General classnames */
 /* Gives all content within this class a max-width */
