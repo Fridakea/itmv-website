@@ -1,5 +1,5 @@
 ---
-const { variant, size } = Astro.props;
+const { size } = Astro.props;
 ---
 
 <button class={" " + size}><slot /></button>
@@ -12,12 +12,11 @@ const { variant, size } = Astro.props;
     border-top: none;
     border-left: none;
     border-right: none;
-    border-radius: 5px;
     color: var(--secondary-color);
     position: absolute;
     transform: translateX(-50%);
     font-family: Helvetica;
-    font-weight: light;
+    font-weight: lighter;
   }
 
   button:hover {
