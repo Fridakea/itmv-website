@@ -1,14 +1,14 @@
 ---
 import { Image } from "astro:assets";
-import localClothesPile from "../images/pile-of-clothes-green.png";
-import localSewingWomen from "../images/women-working-green.png";
-import localWomen from "../images/women-green.png";
+import localClothesPile from "../images/pile-of-clothes.png";
+import localSewingWomen from "../images/women-working.png";
+import localWomen from "../images/women.png";
 ---
 
-<div class="flex-col pc-flex-row pc-space-between">
+<div class="flex-col pc-flex-row pc-gap-m pc-space-between">
   <div class="parent flex-center">
     <Image src={localClothesPile} alt="En bunke med tøj" />
-    <div class="text-box">
+    <div class="text-box placement-top">
       <h3>+3 Tons</h3>
       <p>Aftagning af kasserede tekstiler i 2023</p>
     </div>
@@ -30,7 +30,7 @@ import localWomen from "../images/women-green.png";
       src={localWomen}
       alt="En række med mange forskellige kvinder repræsenteret"
     />
-    <div class="text-box">
+    <div class="text-box placement-buttom">
       <h3>60</h3>
       <p>Praktikanter i 2023</p>
     </div>
@@ -61,6 +61,14 @@ import localWomen from "../images/women-green.png";
     p {
       margin: 0;
     }
+  }
+
+  .placement-top {
+    top: 20%;
+  }
+
+  .placement-buttom {
+    top: 80%;
   }
 
   @media (min-width: 768px) {
