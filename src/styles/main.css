@@ -54,7 +54,7 @@ h1, h2, h3, h4, summary {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: var(--spacing-medium);
     text-align: center;
 }
