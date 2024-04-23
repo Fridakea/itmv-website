@@ -1,0 +1,33 @@
+---
+
+---
+
+<marquee scrollamount="5" loop>
+  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+  samarbejd - samarbejd - samarbejd - samarbejd - samarbejd - samarbejd -
+</marquee>
+
+<style>
+  marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: var(--spacing-small) 0;
+
+    background-color: var(--secondary-color-shade-light);
+    cursor: pointer;
+    transition: 0.2s;
+
+    text-transform: uppercase;
+    letter-spacing: 25px;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+  }
+</style>
+<script>
+  let elements = document.getElementsByTagName("marquee");
+  Array.from(elements).forEach((el) => el.start());
+</script>

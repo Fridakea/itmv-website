@@ -5,10 +5,19 @@
     src: local('Helvetica'), url('/Helvetica.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Neue-Regrade';
+    src: local('Neue-Regrade'), url('/Neue-Regrade-Bold.woff2') format('woff');
+}
+
 /* Variables */
 :root {
     --primary-color: #F1F0EC;
+    --primary-shade-color: #ffffff;
     --secondary-color: #546B54;
+    --secondary-color-shade: rgba(84,107,84,75%);
+    --secondary-color-shade-light: rgba(84,107,84,50%);
+    --secondary-color-shade-dark: #3E4E3E;
     --action-color: #D75636;
   
     --spacing-small: 16px;
@@ -20,26 +29,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
     background-color: var(--primary-color);
     color: var(--secondary-color);
     font-family: "Helvetica", sans-serif;
-  }
+}
+
+img, image {
+    width: 100%;
+    height: auto;
+}
 
 /* Styling for fonts */
-h1, h2, h3, h4 {
+h1, h2, h3, h4, summary, p, a {
+    margin-bottom: var(--spacing-small);
+}
+
+h1, h2, h3, h4, summary {
     font-weight: bold;
     text-transform: uppercase;
+    font-family: 'Neue-Regrade', sans-serif;
 }
 
 h1 {
     font-size: 2rem;
+    margin-bottom: var(--spacing-medium);
+    text-align: center;
 }
 
 h2 {
     font-size: 1.5rem;
+    text-align: center;
 }
 
-h3 {
+h3, summary {
     font-size: 1.25rem;
 }
 
@@ -51,6 +76,10 @@ p {
     font-size: 1rem;
 }
 
+a {
+    font-weight: 200;
+    color: var(--secondary-color);
+}
 
 /* General classnames */
 /* Gives all content within this class a max-width */
@@ -58,4 +87,62 @@ p {
     max-width: 1200px;
     padding: var(--spacing-medium);
     margin: auto;
+}
+
+/* Classnames for flex, grid and alignment */
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-center {
+    align-self: center;
+    justify-content: center;
+}
+
+.flex-space-between {
+    justify-content: space-between;
+}
+
+.align-center {
+    text-align: center;
+}
+
+.align-right {
+    text-align: right;
+}
+
+/* Gap and spacing */
+.gap-s {
+    gap: var(--spacing-small);
+}
+
+.gap-m {
+    gap: var(--spacing-medium);
+}
+
+.gap-l {
+    gap: var(--spacing-large);
+}
+
+/* Margin button and top */
+.mb-m {
+    margin-bottom: var(--spacing-medium);
+}
+
+.mb-l {
+    margin-bottom: var(--spacing-large);
+}
+
+.mt-m {
+    margin-top: var(--spacing-medium);
+}
+
+.mt-l {
+    margin-top: var(--spacing-large);
 }
