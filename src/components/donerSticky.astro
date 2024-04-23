@@ -1,0 +1,66 @@
+
+<div id="stickyBtnPlaceholder"></div>
+<img id="stickyBtn" src="/img/donerSticky_Btn.svg">
+
+<style>
+
+#stickyBtnPlaceholder {
+    height: 75px; 
+    display: none; 
+}
+
+#stickyBtn {
+    position: relative;
+    height: 75px;
+    width: 75px;
+    border: 0px solid white;
+    border-radius: 360%;
+    transition: transform 0.3s ease, border 0.1s ease;
+    z-index: 1000; 
+}
+
+#stickyBtn:hover {
+    border: 1px dashed var(--action-color);
+    border-radius: 360%;
+    transform: scale(1.05);
+}
+
+@media (min-width: 768px) { 
+    #stickyBtn {
+        height: 150px;
+        width: 150px;
+    }
+
+    #stickyBtnPlaceholder {
+    height: 150px; 
+    display: none; 
+}
+}
+</style>
+
+<script>
+
+    var stickyBtn = document.getElementById('stickyBtn');
+    var stickyBtnPlaceholder = document.getElementById('stickyBtnPlaceholder');
+    
+    function adjustStickyButtonPosition() {
+    var windowHeight = window.innerHeight;
+    var buttonBottom = stickyBtn.getBoundingClientRect().bottom;
+
+    if (buttonBottom <= windowHeight) {
+        stickyBtn.style.position = 'fixed';
+        stickyBtn.style.bottom = '20px';
+        stickyBtn.style.left = '20px';
+        stickyBtnPlaceholder.style.display = 'block'; 
+    } else {
+        stickyBtn.style.position = 'relative';
+        stickyBtn.style.bottom = '20px';
+        stickyBtn.style.left = '20px';
+        stickyBtnPlaceholder.style.display = 'none'; 
+    }
+}
+    
+    window.addEventListener('scroll', adjustStickyButtonPosition);
+    window.addEventListener('resize', adjustStickyButtonPosition);
+    adjustStickyButtonPosition();
+    </script>
