@@ -6,25 +6,26 @@ import PromoteBanner from "../components/Promote-banner.astro";
 import Accordions from "../components/Accordions.astro";
 import DifferenceSection from "../components/Difference-section.astro";
 import Companies from "../components/Companies.astro";
+import Esg from "../components/Esg.astro";
+import Stoettesection from "../components/Stoettesection.astro";
+import Button from "../components/Button.astro";
 ---
 
 <MainLayout>
   <main>
     <div class="content">
-      <p>
-        Alt indhold skal være inde i denne div - undtagen footer, banner og
-        hero-section - Så det har en max-bredde
-      </p>
+      <p>Alt indhold skal være inde i denne div - undtagen footer, banner og hero-section - Så det har en max-bredde</p>
 
       <DifferenceSection />
       <Companies />
     </div>
-
+    <Esg />
     <PromoteBanner />
 
     <div class="content">
       <Cards />
-
+      <Stoettesection />
+      <Button size="large">GIV ET BIDRAG</Button>
       <Accordions />
     </div>
 
