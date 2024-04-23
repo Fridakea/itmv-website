@@ -16,21 +16,25 @@ import DonerSticky from "../components/donerSticky.astro";
 import HeroVideo from "../components/heroVideo.astro";
 ---
 
-<HeroVideo />
-<DonerSticky />
-
 <MainLayout>
   <main>
+    <HeroVideo />
+    <DonerSticky />
+
     <div class="content">
-      <p>Alt indhold skal være inde i denne div - undtagen footer, banner og hero-section - Så det har en max-bredde</p>
+      <p>
+        Alt indhold skal være inde i denne div - undtagen footer, banner og
+        hero-section - Så det har en max-bredde
+      </p>
 
       <DifferenceSection />
       <Companies />
+      <Esg />
+
       <IraCard name="IRA" description="haha" />
       <OlenaCard />
       <ZoulikhaCard />
     </div>
-    <Esg />
     <PromoteBanner />
 
     <div class="content">
