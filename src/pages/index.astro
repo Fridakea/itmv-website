@@ -1,15 +1,23 @@
 ---
 import MainLayout from "../layouts/Main-layout.astro";
 import Footer from "../components/Footer.astro";
+import Accordions from "../components/Accordions.astro";
 import Cards from "../components/Cards.astro";
 import PromoteBanner from "../components/Promote-banner.astro";
-import Accordions from "../components/Accordions.astro";
 import DifferenceSection from "../components/Difference-section.astro";
 import Companies from "../components/Companies.astro";
 import Esg from "../components/Esg.astro";
 import Stoettesection from "../components/Stoettesection.astro";
 import Button from "../components/Button.astro";
+import IraCard from "../components/iraCard.astro";
+import ZoulikhaCard from "../components/zoulikhaCard.astro";
+import OlenaCard from "../components/olenaCard.astro";
+import DonerSticky from "../components/donerSticky.astro";
+import HeroVideo from "../components/heroVideo.astro";
 ---
+
+<HeroVideo />
+<DonerSticky />
 
 <MainLayout>
   <main>
@@ -18,6 +26,9 @@ import Button from "../components/Button.astro";
 
       <DifferenceSection />
       <Companies />
+      <IraCard name="IRA" description="haha" />
+      <OlenaCard />
+      <ZoulikhaCard />
     </div>
     <Esg />
     <PromoteBanner />
