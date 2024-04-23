@@ -1,0 +1,107 @@
+---
+import { preprocess } from "astro/zod";
+import "../styles/main.css";
+---
+
+<div id="year1">
+    <h3>2010</h3> <h4>ISHØJ</h4>
+</div>
+
+<div id="year2">
+    <h3>2012</h3> <h4>RØDOVRE</h4>
+</div>
+
+<div id="year3">
+    <h3>2018</h3> <h4>GLADSAXE</h4>
+</div>
+
+<div id="year4">
+    <h3>2018</h3> <h4>GLADSAXE</h4>
+</div>
+
+<div id="year5">
+    <h3>2090</h3> <h4>AMAGER</h4>
+</div>
+
+<div id="year6">
+    <h3>2020</h3> <h4>NØRREBRO</h4>
+</div>
+
+<div id="year7">
+    <h3>2022</h3> <h4>FARUM</h4>
+</div>
+
+<div id="year8">
+    <h3>2023</h3> <h4>NØRREBRO</h4>
+</div>
+
+  <style>
+    #year1 {
+      position:absolute;
+      margin-top: -48rem;
+      margin-left: 16.7rem;
+      background-color: red;
+    }
+    #year2 {
+      margin-top: -46.7rem;
+      margin-left: 7.5rem;
+    }
+    #year3 {
+      margin-top: -39rem;
+      margin-left: 8.2rem;
+    }
+    #year4 {
+      margin-top: -36rem;
+      margin-left: 16rem;
+    }
+    #year5 {
+      margin-top: -33rem;
+      margin-left: 10.5rem;
+    }
+    #year6 {
+      margin-top: -24.8rem;
+      margin-left: 9.4rem;
+    }
+    #year7 {
+      margin-top: -18.9rem;
+      margin-left: 14.7rem;
+    }
+    #year8 {
+      margin-top: -12.5rem;
+      margin-left: 6rem;
+    }
+ /* Slide-in animation for the card */
+ .slide-card {
+      position: absolute;
+      top: 0;
+      left: 100%; /* Start off-screen */
+      transition: left 0.5s ease-in-out;
+      width: 300px; /* Adjust width as needed */
+      height: 200px; /* Adjust height as needed */
+      background-color: #fff; /* Adjust background color as needed */
+      z-index: 0; /* Ensure the card appears beneath the heart icon */
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    }
+
+    /* Card content styles */
+    .card-content {
+      padding: 20px;
+    }
+
+    /* When the checkbox is checked, slide the card in */
+    #slide-checkbox:checked ~ #slide-card1 {
+      left: calc(50% - 150px); /* Slide in to the center */
+    }
+
+  </style>
+
+
+
+
+
+
+
+
+    @media (min-width: 768px) {
+  /* husks at tilføje */
+}
