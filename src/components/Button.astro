@@ -1,0 +1,37 @@
+---
+const { size } = Astro.props;
+---
+
+<button class={" " + size}><slot /></button>
+
+<style>
+  button {
+    padding: 2rem;
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--action-color);
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: var(--secondary-color);
+    position: absolute;
+
+    font-family: Helvetica;
+    font-weight: lighter;
+  }
+
+  button:hover {
+    border-top: 4px solid var(--action-color);
+    border-left: 4px solid var(--action-color);
+    border-right: 4px solid var(--action-color);
+  }
+
+  .small {
+    font-size: 1rem;
+    padding: 10px 24px;
+  }
+
+  .large {
+    font-size: 1.6rem;
+    padding: 20px 24px;
+  }
+</style>

@@ -1,24 +1,28 @@
 ---
 import MainLayout from "../layouts/Main-layout.astro";
-import ZoulikhaCard from "../components/zoulikhaCard.astro";
-import IraCard from "../components/iraCard.astro";
-import OlenaCard from "../components/olenaCard.astro";
-import DonerSticky from "../components/donerSticky.astro";
-import HeroVideo from "../components/heroVideo.astro";
 ---
-<HeroVideo />
+
 <MainLayout>
   <main>
     <div class="content">
-      <div>
-        <p>
-          I Tråd Med Verden er en socialøkonomisk virksomhed som arbejder med
-          design og genanvendelse af kasserede tekstiler med omdrejningspunkt
-          for at skabe jobmuligheder, netværk og livskvalitet for mennesker, som
-          har mistet fodfæste på arbejdsmarkedet.
-        </p>
-      </div>
+      <p>
+        Alt indhold skal være inde i denne div - undtagen footer, banner og
+        hero-section - Så det har en max-bredde
+      </p>
+
+      <DifferenceSection />
+      <Companies />
     </div>
+
+    <PromoteBanner />
+
+    <div class="content">
+      <Cards />
+
+      <Accordions />
+    </div>
+
+    <Footer />
   </main>
 
 </MainLayout>

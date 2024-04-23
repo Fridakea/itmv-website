@@ -1,0 +1,84 @@
+---
+import { Image } from "astro:assets";
+import localClothesPile from "../images/pile-of-clothes.png";
+import localSewingWomen from "../images/women-working.png";
+import localWomen from "../images/women.png";
+---
+
+<div class="flex-col pc-flex-row pc-gap-m pc-space-between mb-l">
+  <div class="parent flex-center">
+    <Image src={localClothesPile} alt="En bunke med tøj" />
+    <div class="text-box placement-top">
+      <h3>+3 Tons</h3>
+      <p>Aftagning af kasserede tekstiler i 2023</p>
+    </div>
+  </div>
+
+  <div class="parent flex-center">
+    <Image
+      src={localSewingWomen}
+      alt="En kvinde som sidder ved en symaskine og laver tøj"
+    />
+    <div class="text-box">
+      <h3>12</h3>
+      <p>Ansættelser i 2023</p>
+    </div>
+  </div>
+
+  <div class="parent flex-center">
+    <Image
+      src={localWomen}
+      alt="En række med mange forskellige kvinder repræsenteret"
+    />
+    <div class="text-box placement-buttom">
+      <h3>60</h3>
+      <p>Praktikanter i 2023</p>
+    </div>
+  </div>
+</div>
+
+<style>
+  .parent {
+    aspect-ratio: 1 / 1;
+    max-height: 300px;
+    position: relative;
+    margin: 0 10%;
+  }
+
+  .text-box {
+    width: 175px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: calc(var(--spacing-small) / 2) var(--spacing-small);
+    background-color: rgba(255, 255, 255, 50%);
+    text-align: center;
+    border-radius: 5px 35px 5px 35px;
+
+    & h3,
+    p {
+      margin: 0;
+    }
+  }
+
+  .placement-top {
+    top: 20%;
+  }
+
+  .placement-buttom {
+    top: 80%;
+  }
+
+  @media (min-width: 768px) {
+    .parent {
+      margin: 0;
+
+      & .text-box {
+        width: 215px;
+        padding: var(--spacing-small) var(--spacing-small);
+      }
+    }
+  }
+</style>
