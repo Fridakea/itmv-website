@@ -1,20 +1,29 @@
 ---
 import MainLayout from "../layouts/Main-layout.astro";
 import Footer from "../components/Footer.astro";
-import Card from "../components/Card.astro";
-/* import Cards from "../components/Cards.astro"; */
-import PromoteBanner from "../components/Promote-banner.astro";
 import Accordions from "../components/Accordions.astro";
+import Cards from "../components/Cards.astro";
+import PromoteBanner from "../components/Promote-banner.astro";
 import DifferenceSection from "../components/Difference-section.astro";
 import Tidslinje from "../components/Tidslinje.astro";
 import Heartbutton from "../components/Heartbutton.astro";
 import ItmvSection from "../components/ItmvSection.astro";
-
 import Companies from "../components/Companies.astro";
+import Esg from "../components/Esg.astro";
+import Stoettesection from "../components/Stoettesection.astro";
+import Button from "../components/Button.astro";
+import IraCard from "../components/iraCard.astro";
+import ZoulikhaCard from "../components/zoulikhaCard.astro";
+import OlenaCard from "../components/olenaCard.astro";
+import DonerSticky from "../components/donerSticky.astro";
+import HeroVideo from "../components/heroVideo.astro";
 ---
 
 <MainLayout>
   <main>
+    <HeroVideo />
+    <DonerSticky />
+
     <div class="content">
       <p>
         Alt indhold skal være inde i denne div - undtagen footer, banner og
@@ -23,8 +32,13 @@ import Companies from "../components/Companies.astro";
       <ItmvSection />
       <DifferenceSection />
       <Companies />
+      <Esg />
+      <article class="womenArticles">
+        <IraCard name="IRA" description="haha" />
+        <OlenaCard />
+        <ZoulikhaCard />
+    </article>
     </div>
-
     <PromoteBanner />
 
     <div class="content">
@@ -35,6 +49,10 @@ import Companies from "../components/Companies.astro";
     
     <!-- <Cards /> -->
     <Accordions />
+      <Cards />
+      <Stoettesection />
+      <Button size="large">GIV ET BIDRAG</Button>
+      <Accordions />
     </div>
 
     <Footer />
