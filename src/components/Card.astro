@@ -1,41 +1,44 @@
 ---
-import { preprocess } from "astro/zod";
 import "../styles/main.css";
----
-<section class="info">
-<div id="year1">
-    <h3>2010</h3> <h4>ISHØJ</h4>
-</div>
 
-<!-- <div id="year2">
-    <h3>2012</h3> <h4>RØDOVRE</h4>
-</div> 
-<div id="year3">
-    <h3>2018</h3> <h4>GLADSAXE</h4>
-</div>
-<div id="year4">
-    <h3>2018</h3> <h4>GLADSAXE</h4>
-</div>
-<div id="year5">
-    <h3>2090</h3> <h4>AMAGER</h4>
-</div>
-<div id="year6">
-    <h3>2020</h3> <h4>NØRREBRO</h4>
-</div>
-<div id="year7">
-    <h3>2022</h3> <h4>FARUM</h4>
-</div>
-<div id="year8">
-    <h3>2023</h3> <h4>NØRREBRO</h4>
-</div> -->
+/* const year = Astro.props.year;
+const city = Astro.props.city; */
+---
+<section>
+<article class="year_info" id="year1"></articleclass>
+    <h3>2010</h3><h4>Ishøj</h4>
+</article>
+
+<!-- <article class="year_info" id="year2"></articleclass>
+  <h3>2012</h3><h4>Rødovre</h4>
+</article>
+
+<article class="year_info" id="year3"></articleclass>
+<h3>2018</h3> <h4>GLADSAXE</h4>
+
+<article class="year_info" id="year4"></articleclass>
+<h3>2018</h3> <h4>GLADSAXE</h4>
+
+<article class="year_info" id="year5"></articleclass>
+<h3>2019</h3> <h4>AMAGER</h4>
+
+<article class="year_info" id="year6"></articleclass>
+<h3>2020</h3> <h4>NØRREBRO</h4>
+
+<article class="year_info" id="year7"></articleclass>
+<h3>2022</h3> <h4>FARUM</h4>
+
+<article class="year_info" id="year8"></articleclass>
+<h3>2023</h3> <h4>NØRREBRO</h4> -->
 </section>
 
   <style>
     #year1 {
       position:absolute;
-      margin-top: -48rem;
+      margin-top: -88rem;
       margin-left: 16.7rem;
-      background-color: red;
+      background-color: blue;
+     
     }
     #year2 {
       margin-top: -46.7rem;
@@ -72,15 +75,57 @@ import "../styles/main.css";
       margin-left: 6rem;
       background-color: red;
     }
-  </style>
+  
 
 
-
-
-
-
-
-
-<!-- @media (min-width: 768px) {
-  husks at tilføje
-} -->
+@media (min-width: 768px) {
+.year_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    display: inline;
+  }
+    #year1 {
+      position:absolute;
+      margin-top: -42rem;
+      margin-left: 10.7rem;
+      background-color: pink;
+    }
+    #year2 {
+      margin-top: -46.7rem;
+      margin-left: 7.5rem;
+      background-color: red;
+    }
+    #year3 {
+      margin-top: -39rem;
+      margin-left: 8.2rem;
+      background-color: red;
+    }
+    #year4 {
+      margin-top: -36rem;
+      margin-left: 16rem;
+      background-color: red;
+    }
+    #year5 {
+      margin-top: -33rem;
+      margin-left: 10.5rem;
+      background-color: red;
+    }
+    #year6 {
+      margin-top: -24.8rem;
+      margin-left: 9.4rem;
+      background-color: red;
+    }
+    #year7 {
+      margin-top: -18.9rem;
+      margin-left: 14.7rem;
+      background-color: red;
+    }
+    #year8 {
+      margin-top: -12.5rem;
+      margin-left: 6rem;
+      background-color: red;
+    }
+}
+</style>

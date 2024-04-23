@@ -14,76 +14,109 @@ import itmvNorrebro2Image from "../images/norrebro2_itmv.jpg";
 /*const year = Astro.props.year;
 const city = Astro.props.city;
 const text = Astro.props.text; 
-- kan også skrives således*/
+- kan også skrives således const { year, city, text } = Astro.props;*/
 
-const { year } = Astro.props;
+/* const year = Astro.props.year;
+const city = Astro.props.city; */
 ---
 
+<!-- <article>
+    <h3>year</h3><h4>city</h4>
+    <slot />
+</article> -->
 
-<article>
-<slot />
+<article class="itmv-info" id="historie1">
+  <Image src={itmvIshojImage} alt="ITMVs spirende start" />
+  <h3>2010</h3> <h4>Ishøj</h4>
+  <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial indsat i Ishøj og Rødovre</p>
 </article>
-<!-- 
-<Cards year="2010" city="ISHØJ" text="I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial indsat i Ishøj og Rødovre."/>
 
-<Cards year="2012" city="RØDOVRE" text="I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik hjælp til f.eks. brug af computer og Nem-ID, der blev snakket om samfundet og nogle fik øvet deres danske sprog. Desuden har en del kvinder brugt deres arbejde i I Tråd Med Verden til at styrke sine CV og finde fast arbejde."/>
-
-<Cards year="2018" city="GLADSAXE" text="I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt tekstil- og håndarbejds-produktion for den socialøkonomiske virksomhed I Tråd Med Verden (ITMV). Her har de holdt til siden januar 2018, hvor de indledte et samarbejde med Bolig-foreningen 3B og Gladsaxe Kommune."/>
-
-<Cards year="2018" city="GLADSAXE" text="I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler og producerer interieurprodukter og tekstildesign, som sælges dels til virksomhedskunder, dels i vores webshop. Formålet med produktionen er at beskæftige mennesker på kanten af arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab."/>
-
-<Cards year="2019" city="AMAGER" text="Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med Københavns Jobcenter om en beskæftigelsesindsats, således at man kan blive tilknyttet værkstedet gennem et praktikforløb. Formålet er at tilbyde mennesker et meningsfuldt praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet.Siden blev det videreført som en boligsocial indsat i Ishøj og Rødovre."/>
-
-<Cards year="2020" city="NØRREBRO" text="I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og plantefarve får kvinderne et fast holdepunkt i deres hverdag - og tonsvis af kasserede tekstiler får nyt liv i I Tråd Med Verdens smukke designs."/>
-
-<Cards year="2022" city="FARUM" text="Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum Midtpunkt. I Tråd Med Verden er et tekstilværksted, hvor der arbejdes med syning, broderi, plantefarvning og upcycling af kasserede tekstiler. Produkterne sælges til virksomheder og private, og virksomheden indgår desuden i kunstprojekter og samarbejder med museer."/>
-
-<Cards year="2023" city="NØRREBRO" text="I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret gennem jobcentre, fondsmidler og via salg fra butik og webshop. ITMV hjælper folk der har været ramt af depression eller sygdom. Her bliver arbejdet tilpasset de udfordringer, den enkelte har, så personen stille og roligt udvikler sig i arbejdet. ITMV producerer gardiner, puder, tehætter og meget mere af genbrugsmaterialer, som sælges til private og på bestilling til virksomheder."/>
- -->
-<!-- 
-<article>
+<article class="itmv-info" id="historie2">
   <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2012</h3> <h4>Rødovre</h4>
+  <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
+    hjælp til f.eks. brug af computer og Nem-ID, der blev snakket om samfundet og nogle 
+    fik øvet deres danske sprog. Desuden har en del kvinder brugt deres arbejde i I Tråd 
+    Med Verden til at styrke sine CV og finde fast arbejde.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie3">
   <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2018</h3> <h4>Gladsaxe</h4>
+  <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
+    tekstil- og håndarbejds-produktion for den socialøkonomiske virksomhed I Tråd Med Verden 
+    (ITMV). Her har de holdt til siden januar 2018, hvor de indledte et samarbejde med 
+    Bolig-foreningen 3B og Gladsaxe Kommune.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie4">
   <Image src={itmvGladsaxe2Image} alt="RSV icon" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2018</h3> <h4>Gladsaxe</h4>
+  <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
+    beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler 
+    og producerer interieurprodukter og tekstildesign, som sælges dels til virksomhedskunder, 
+    dels i vores webshop. Formålet med produktionen er at beskæftige mennesker på kanten af 
+    arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie5">
   <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2019</h3> <h4>Amager</h4>
+  <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
+    i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med 
+    Københavns Jobcenter om en beskæftigelsesindsats, således at man kan blive tilknyttet 
+    værkstedet gennem et praktikforløb. Formålet er at tilbyde mennesker et meningsfuldt 
+    praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet.Siden 
+    blev det videreført som en boligsocial indsat i Ishøj og Rødovre.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie6">
   <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2020</h3> <h4>Nørrebro</h4>
+  <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
+    udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og 
+    plantefarve får kvinderne et fast holdepunkt i deres hverdag - og tonsvis af kasserede 
+    tekstiler får nyt liv i I Tråd Med Verdens smukke designs.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie7">
   <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2022</h3> <h4>Farum</h4>
+  <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
+    Midtpunkt. I Tråd Med Verden er et tekstilværksted, hvor der arbejdes med syning, broderi, 
+    plantefarvning og upcycling af kasserede tekstiler. Produkterne sælges til virksomheder og 
+    private, og virksomheden indgår desuden i kunstprojekter og samarbejder med museer.</p>
 </article>
 
-<article>
+<article class="itmv-info" id="historie8">
   <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
-  <h3>{year}</h3> <h4>{city}</h4>
-  <p>{text}</p>
+  <h3>2023</h3> <h4>Nørrebro</h4>
+  <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
+     gennem jobcentre, fondsmidler og via salg fra butik og webshop. ITMV hjælper folk der har 
+     været ramt af depression eller sygdom. Her bliver arbejdet tilpasset de udfordringer, den 
+     enkelte har, så personen stille og roligt udvikler sig i arbejdet. ITMV producerer gardiner,
+     puder, tehætter og meget mere af genbrugsmaterialer, som sælges til private og på bestilling
+     til virksomheder.</p>
 </article>
 
+<style>
+.itmv-info h3,
+.itmv-info h4 {
+    display: inline;
+    padding-right: 1.6rem; 
+}
+.itmv-info p{
+  margin: .6rem 0rem 2rem 0rem;
+}
+.itmv-info img{
+  margin-bottom: 1.5rem;
+}
 
 
+@media (min-width: 768px) {
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
 
-   -->
+  }
+}
+
+</style>
