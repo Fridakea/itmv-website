@@ -25,13 +25,13 @@ const city = Astro.props.city; */
     <slot />
 </article> -->
 
-<article class="itmv-info" id="historie1">
+<article class="slide-card" id="historie1">
   <Image src={itmvIshojImage} alt="ITMVs spirende start" />
   <h3>2010</h3> <h4>Ishøj</h4>
   <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial indsat i Ishøj og Rødovre</p>
 </article>
 
-<article class="itmv-info" id="historie2">
+<article class="slide-card" id="historie2">
   <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
   <h3>2012</h3> <h4>Rødovre</h4>
   <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
@@ -40,7 +40,7 @@ const city = Astro.props.city; */
     Med Verden til at styrke sine CV og finde fast arbejde.</p>
 </article>
 
-<article class="itmv-info" id="historie3">
+<article class="slide-card" id="historie3">
   <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
   <h3>2018</h3> <h4>Gladsaxe</h4>
   <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
@@ -49,7 +49,7 @@ const city = Astro.props.city; */
     Bolig-foreningen 3B og Gladsaxe Kommune.</p>
 </article>
 
-<article class="itmv-info" id="historie4">
+<article class="slide-card" id="historie4">
   <Image src={itmvGladsaxe2Image} alt="RSV icon" />
   <h3>2018</h3> <h4>Gladsaxe</h4>
   <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
@@ -59,7 +59,7 @@ const city = Astro.props.city; */
     arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab.</p>
 </article>
 
-<article class="itmv-info" id="historie5">
+<article class="slide-card" id="historie5">
   <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
   <h3>2019</h3> <h4>Amager</h4>
   <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
@@ -70,7 +70,7 @@ const city = Astro.props.city; */
     blev det videreført som en boligsocial indsat i Ishøj og Rødovre.</p>
 </article>
 
-<article class="itmv-info" id="historie6">
+<article class="slide-card" id="historie6">
   <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
   <h3>2020</h3> <h4>Nørrebro</h4>
   <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
@@ -79,7 +79,7 @@ const city = Astro.props.city; */
     tekstiler får nyt liv i I Tråd Med Verdens smukke designs.</p>
 </article>
 
-<article class="itmv-info" id="historie7">
+<article class="slide-card" id="historie7">
   <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
   <h3>2022</h3> <h4>Farum</h4>
   <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
@@ -88,7 +88,7 @@ const city = Astro.props.city; */
     private, og virksomheden indgår desuden i kunstprojekter og samarbejder med museer.</p>
 </article>
 
-<article class="itmv-info" id="historie8">
+<article class="slide-card" id="historie8">
   <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
   <h3>2023</h3> <h4>Nørrebro</h4>
   <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
@@ -100,17 +100,31 @@ const city = Astro.props.city; */
 </article>
 
 <style>
-.itmv-info h3,
-.itmv-info h4 {
+/* .slide-card h3,
+.slide-card h4 {
     display: inline;
-    padding-right: 1.6rem; 
+    padding-right: 1.2rem; 
 }
-.itmv-info p{
+.slide-card p {
   margin: .6rem 0rem 2rem 0rem;
 }
-.itmv-info img{
+.slide-card img{
   margin-bottom: 1.5rem;
-}
+} */
+
+/*.slide-card {
+  border-color: rgb(114, 180, 180);
+ border: 3rem
+   position: absolute;
+  top: 15;
+  left: 100%; /* Start off-screen *
+  transition: left 0.5s ease-in-out;
+  width: 300px; /* Adjust width as needed *
+  height: 200px; /* Adjust height as needed *
+  background-color: #d13e3e; /* Adjust background color as needed *
+  z-index: 0; /* Ensure the card appears beneath the heart icon *
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth *
+ */}
 
 
 @media (min-width: 768px) {

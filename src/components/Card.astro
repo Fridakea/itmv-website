@@ -9,71 +9,106 @@ const city = Astro.props.city; */
     <h3>2010</h3><h4>Ishøj</h4>
 </article>
 
-<!-- <article class="year_info" id="year2"></articleclass>
+<article class="year_info" id="year2"></articleclass>
   <h3>2012</h3><h4>Rødovre</h4>
 </article>
 
 <article class="year_info" id="year3"></articleclass>
 <h3>2018</h3> <h4>GLADSAXE</h4>
+</article>
 
 <article class="year_info" id="year4"></articleclass>
 <h3>2018</h3> <h4>GLADSAXE</h4>
+</article>
 
 <article class="year_info" id="year5"></articleclass>
 <h3>2019</h3> <h4>AMAGER</h4>
+</article>
 
 <article class="year_info" id="year6"></articleclass>
 <h3>2020</h3> <h4>NØRREBRO</h4>
+</article>
 
 <article class="year_info" id="year7"></articleclass>
 <h3>2022</h3> <h4>FARUM</h4>
+</article>
 
 <article class="year_info" id="year8"></articleclass>
-<h3>2023</h3> <h4>NØRREBRO</h4> -->
+<h3>2023</h3> <h4>NØRREBRO</h4> 
+</article>
 </section>
 
   <style>
+
+    .section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    position: relative;
+    }
+    /* .year_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: center;
+    display: inline;
+  } */
     #year1 {
       position:absolute;
-      margin-top: -88rem;
-      margin-left: 16.7rem;
-      background-color: blue;
-     
+      text-align: center;
+      line-height: 25%;
+      top: 256%;
+      left: 77%;     
     }
     #year2 {
-      margin-top: -46.7rem;
-      margin-left: 7.5rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 255%;
+      left: 30%;
     }
     #year3 {
-      margin-top: -39rem;
-      margin-left: 8.2rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 280%;
+      left: 18%;
     }
     #year4 {
-      margin-top: -36rem;
-      margin-left: 16rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 279%;
+      left: 66%;
     }
     #year5 {
-      margin-top: -33rem;
-      margin-left: 10.5rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 299%;
+      left: 54%;
     }
     #year6 {
-      margin-top: -24.8rem;
-      margin-left: 9.4rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 309%;
+      left: 18%;
     }
     #year7 {
-      margin-top: -18.9rem;
-      margin-left: 14.7rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 319%;
+      left: 70%;
     }
     #year8 {
-      margin-top: -12.5rem;
-      margin-left: 6rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 336%;
+      left: 18%;
     }
   
 
@@ -86,46 +121,61 @@ const city = Astro.props.city; */
     align-self: center;
     display: inline;
   }
-    #year1 {
+  #year1 {
       position:absolute;
-      margin-top: -42rem;
-      margin-left: 10.7rem;
-      background-color: pink;
+      text-align: center;
+      line-height: 25%;
+      top: 205%;
+      left: 17%;  
     }
     #year2 {
-      margin-top: -46.7rem;
-      margin-left: 7.5rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 237%;
+      left: 20%;
     }
     #year3 {
-      margin-top: -39rem;
-      margin-left: 8.2rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 261%;
+      left: 28%;
     }
     #year4 {
-      margin-top: -36rem;
-      margin-left: 16rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 208%;
+      left: 37%;
     }
     #year5 {
-      margin-top: -33rem;
-      margin-left: 10.5rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 234%;
+      left: 51%;
     }
     #year6 {
-      margin-top: -24.8rem;
-      margin-left: 9.4rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 244%;
+      left: 67%;
     }
     #year7 {
-      margin-top: -18.9rem;
-      margin-left: 14.7rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 214%;
+      left: 69%;
     }
     #year8 {
-      margin-top: -12.5rem;
-      margin-left: 6rem;
-      background-color: red;
+      position:absolute;
+      text-align: center;
+      line-height: 25%;
+      top: 260%;
+      left: 82%;
     }
 }
 </style>
