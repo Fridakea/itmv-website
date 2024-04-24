@@ -12,8 +12,6 @@ const { description, name } = Astro.props;
   position: relative;
   width: 250px;
   height: 400px;
-  border: 1px dashed var(--secondary-color);
-  border-spacing: 0px;
   transition: transform 0.4s ease;
   
 }
@@ -30,6 +28,8 @@ const { description, name } = Astro.props;
   height: 100%;
   object-fit: cover;
   transition: opacity 0.5s ease;
+  border: 1px dashed var(--secondary-color);
+  border-spacing: 0px;
 }
 
 .woman-component p {
@@ -42,6 +42,8 @@ const { description, name } = Astro.props;
   padding: 10px;
   opacity: 0;
   transition: opacity 0.5s ease; 
+  border: 1px dashed var(--secondary-color);
+  border-spacing: 0px;
 }
 
 .woman-component p.visible {
@@ -55,10 +57,16 @@ const { description, name } = Astro.props;
 @media (min-width: 768px) { 
 
   .woman-component {
-    width: 300px;
-    height: 500px;
+    width: 250px;
+    height: 450px;
   }
-  
+
+  .woman-component p {
+  margin-top: 100px;
+  }
+  .woman-component img {
+  margin-top: 100px;
+  }
   .woman-component:hover img {
     opacity: 0;
   }
