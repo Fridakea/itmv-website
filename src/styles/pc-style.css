@@ -53,4 +53,19 @@ h4 {
 .pc-gap-m {
     gap: var(--spacing-medium);
 }
+
+.womenArticles {
+    display: grid;
+    grid-template-columns: repeat(3, auto); /* Three columns with auto width */
+    justify-content: center; /* Center the grid items horizontally */
+   
+    
 }
+
+.IraCard, .OlenaCard, .ZoulikhaCard {
+    display: flex;
+  
+}
+
+}
+
