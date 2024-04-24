@@ -2,12 +2,13 @@
 const { size } = Astro.props;
 ---
 
-<article class="content">
+<article class="content flex-row flex-center">
   <button class={" " + size}><slot /></button>
 </article>
 
 <style>
   button {
+    margin: auto;
     padding: 2rem;
     background-color: var(--primary-color);
     border-bottom: 4px solid var(--action-color);
@@ -15,7 +16,6 @@ const { size } = Astro.props;
     border-left: none;
     border-right: none;
     color: var(--action-color);
-    position: absolute;
     font-family: Helvetica;
     font-weight: lighter;
   }
