@@ -64,11 +64,11 @@ h2 {
     text-align: center;
 }
 
-h3, summary {
+h3 {
     font-size: 1.25rem;
 }
 
-h4 {
+h4, summary {
     font-size: 1rem;
 }
 
@@ -145,4 +145,12 @@ a {
 
 .mt-l {
     margin-top: var(--spacing-large);
+}
+
+.womenArticles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-medium)
+    
 }

@@ -2,18 +2,17 @@
 import MainLayout from "../layouts/Main-layout.astro";
 ---
 
-<MainLayout>
-  <article class="content">
-    <img src="img/esg.svg" alt="..." />
-    <section>
-      <h2>DET SIGER VORES SAMARBEJDSPARTNERE</h2>
-      <p class="citat">”[...] vi er vilde med konceptet med Repair Service, der på alle parametre taler direkte ind i vores arbejde med at sætte mest muligt fokus på bæredygtige løsninger i hverdagen i et stort kontorhus. Det kommer også til at indgå i vores arbejde med ESG.”</p>
-      <p class="navn">Sanne Kjær, Kundedirektør KAB om samarbejdet med ITMV</p>
-      <p class="citat">“Fantastisk koncept. Jeg er glad for at kunne hjælpe de to syerske, der har været siddet i KAB-Huset med at få foden ind på arbejdsmarkedet og blive en del af et socialt og forpligtende fællesskab.”</p>
-      <p class="navn">Mark Petterson, Digital redaktør KAB om ITMV’s Repair Service</p>
-    </section>
-  </article>
-</MainLayout>
+<article class="content">
+  <img src="img/esg.svg" alt="..." />
+  <section>
+    <h2>DET SIGER VORES SAMARBEJDSPARTNERE</h2>
+    <p class="citat">”[...] vi er vilde med konceptet med Repair Service, der på alle parametre taler direkte ind i vores arbejde med at sætte mest muligt fokus på bæredygtige løsninger i hverdagen i et stort kontorhus. Det kommer også til at indgå i vores arbejde med ESG.”</p>
+    <p class="navn">Sanne Kjær, Kundedirektør KAB om samarbejdet med ITMV</p>
+    <p class="citat">“Fantastisk koncept. Jeg er glad for at kunne hjælpe de to syerske, der har været siddet i KAB-Huset med at få foden ind på arbejdsmarkedet og blive en del af et socialt og forpligtende fællesskab.”</p>
+    <p class="navn">Mark Petterson, Digital redaktør KAB om ITMV’s Repair Service</p>
+  </section>
+</article>
+
 <style>
   @media (min-width: 768px) {
     .content {
@@ -63,5 +62,6 @@ import MainLayout from "../layouts/Main-layout.astro";
   .navn,
   .citat {
     max-width: 520px;
+    font-weight: 800;
   }
 </style>
