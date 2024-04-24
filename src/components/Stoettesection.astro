@@ -11,18 +11,22 @@ import MainLayout from "../layouts/Main-layout.astro";
   <section class="icons">
     <button class="partner">
       <img src="img/partner.svg" alt="..." />
+      <a href="https://www.itmv.dk/pages/samarbejde">
       <p>PARTNERSKAB</p>
     </button>
     <button class="repair">
       <img src="img/repairservice.svg" alt="..." />
+      <a href="https://www.itmv.dk/pages/repair-service">
       <p>REPAIR SERVICE</p>
     </button>
     <button class="shop">
       <img src="img/shop.svg" alt="..." />
+      <a href="https://www.itmv.dk/collections/all">
       <p>SHOP</p>
     </button>
     <button class="lecture">
       <img src="img/lecture.svg" alt="..." />
+      <a href="https://www.itmv.dk/pages/foredrag-rundvisning">
       <p>FOREDRAG</p>
     </button>
   </section>
@@ -33,7 +37,6 @@ import MainLayout from "../layouts/Main-layout.astro";
     .paragraph {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 20px;
       margin-bottom: 3%;
     }
     .icons {
@@ -42,7 +45,7 @@ import MainLayout from "../layouts/Main-layout.astro";
       gap: 20px;
     }
     .paragraph p {
-      max-width: 470px;
+      max-width: 400px;
     }
   }
 
@@ -77,4 +80,13 @@ import MainLayout from "../layouts/Main-layout.astro";
     color: var(--secondary-color);
     font-family: Helvetica;
   }
+
+  a {
+    text-decoration: none;
+  }
+
+button:hover {
+  transform: scale(1.1);
+}
+
 </style>
