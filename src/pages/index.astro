@@ -2,12 +2,11 @@
 import MainLayout from "../layouts/Main-layout.astro";
 import Footer from "../components/Footer.astro";
 import Accordions from "../components/Accordions.astro";
-/* import Card from "../components/Card.astro";*/
-/*import Cards from "../components/Cards.astro"; */
-/* import Tidslinje from "../components/Tidslinje.astro"; */
-import Timeline from "../components/Timeline.astro";
+import Card from "../components/Card.astro";
+import Cards from "../components/Cards.astro";
 import PromoteBanner from "../components/Promote-banner.astro";
 import DifferenceSection from "../components/Difference-section.astro";
+import Tidslinje from "../components/Tidslinje.astro";
 import Heartbutton from "../components/Heartbutton.astro";
 import ItmvSection from "../components/ItmvSection.astro";
 import Companies from "../components/Companies.astro";
@@ -27,25 +26,16 @@ import HeroVideo from "../components/heroVideo.astro";
     <DonerSticky />
 
     <div class="content">
-      <!-- <p>
-        Alt indhold skal være inde i denne div - undtagen footer, banner og
-        hero-section - Så det har en max-bredde
-      </p> -->
       <ItmvSection />
       <DifferenceSection />
       <Companies />
       <Esg />
-  
     </div>
     <PromoteBanner />
-  
 
     <div class="content">
-
-      <!-- <Card />
-      <Heartbutton />  -->
-      <Timeline />
       
+      <Tidslinje />
       <section id="womenSection">
         <h2>Læs mere om vores kvinders<br> unikke historie</h2>
       <article class="womenArticles">
@@ -54,15 +44,17 @@ import HeroVideo from "../components/heroVideo.astro";
         <ZoulikhaCard name="ZOULIKHA" />
       </article>
     </section>
-         
+      <Card />
+      <Heartbutton />    
       
     <Accordions />
-      <!-- <Cards /> -->
+      <Cards />
       <Stoettesection />
       <Button size="large">GIV ET BIDRAG</Button>
       <Accordions />
+      <Button size="large">BESØG I TRÅD MED VERDEN</Button>
     </div>
-    <Button size="large">BESØG I TRÅD MED VERDEN</Button>
+
     <Footer />
   </main>
 </MainLayout>

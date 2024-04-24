@@ -5,7 +5,7 @@ import localSewingWomen from "../images/women-working.png";
 import localWomen from "../images/women.png";
 ---
 
-<div class="flex-col pc-flex-row pc-gap-m pc-space-between mb-l">
+<div class="flex-col pc-flex-row pc-gap-m pc-space-between container">
   <div class="parent flex-center">
     <Image src={localClothesPile} alt="En bunke med tøj" />
     <div class="text-box placement-top">
@@ -38,6 +38,10 @@ import localWomen from "../images/women.png";
 </div>
 
 <style>
+  .container {
+    margin-bottom: calc(var(--spacing-large) * 2);
+  }
+
   .parent {
     aspect-ratio: 1 / 1;
     max-height: 300px;
