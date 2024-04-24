@@ -11,44 +11,77 @@ import itmvNorrebroImage from "../images/norrebro1_itmv.jpg";
 import itmvFarumImage from "../images/farum_itmv.jpg";
 import itmvNorrebro2Image from "../images/norrebro2_itmv.jpg";
 
+/*const year = Astro.props.year;
+const city = Astro.props.city;
+const text = Astro.props.text; 
+- kan også skrives således const { year, city, text } = Astro.props;*/
+
+/* const year = Astro.props.year;
+const city = Astro.props.city; */
 ---
-<section class="section_slide-card">
-<!-- <article class="slide-card" id="historie1">
-  <Image src={itmvIshojImage} alt="ITMVs spirende start" />
-  <h3>2010</h3> <h4>Ishøj</h4>
-  <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial indsat i Ishøj og Rødovre</p>
+
+<!-- <article>
+    <h3>year</h3><h4>city</h4>
+    <slot />
+</article> -->
+<section class="slide-card">
+  <article id="historie1">
+   <div>
+    <Image src={itmvIshojImage} alt="ITMVs spirende start" />
+   </div>
+   <div>
+    <h3>2010</h3> <h4>Ishøj</h4>
+    <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i 
+      samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial 
+      indsat i Ishøj og Rødovre</p>
+   </div>
 </article>
 
-<article class="slide-card" id="historie2">
-  <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
-  <h3>2012</h3> <h4>Rødovre</h4>
-  <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
+<article id="historie2">
+  <div>
+   <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
+  </div>
+  <div>
+   <h3>2012</h3> <h4>Rødovre</h4>
+   <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
     hjælp til f.eks. brug af computer og Nem-ID, der blev snakket om samfundet og nogle 
     fik øvet deres danske sprog. Desuden har en del kvinder brugt deres arbejde i I Tråd 
     Med Verden til at styrke sine CV og finde fast arbejde.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie3">
-  <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
-  <h3>2018</h3> <h4>Gladsaxe</h4>
-  <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
+<article id="historie3">
+  <div>
+   <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
+  </div>
+  <div>
+   <h3>2018</h3> <h4>Gladsaxe</h4>
+   <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
     tekstil- og håndarbejds-produktion for den socialøkonomiske virksomhed I Tråd Med Verden 
     (ITMV). Her har de holdt til siden januar 2018, hvor de indledte et samarbejde med 
     Bolig-foreningen 3B og Gladsaxe Kommune.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie4">
-  <Image src={itmvGladsaxe2Image} alt="RSV icon" />
-  <h3>2018</h3> <h4>Gladsaxe</h4>
-  <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
+<article id="historie4">
+  <div>
+   <Image src={itmvGladsaxe2Image} alt="RSV icon" />
+  </div>
+  <div>
+   <h3>2018</h3> <h4>Gladsaxe</h4>
+   <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
     beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler 
     og producerer interieurprodukter og tekstildesign, som sælges dels til virksomhedskunder, 
     dels i vores webshop. Formålet med produktionen er at beskæftige mennesker på kanten af 
     arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie5">
-  <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
+<article id="historie5">
+  <div>
+   <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
+  </div>
+  <div>
   <h3>2019</h3> <h4>Amager</h4>
   <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
     i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med 
@@ -56,52 +89,83 @@ import itmvNorrebro2Image from "../images/norrebro2_itmv.jpg";
     værkstedet gennem et praktikforløb. Formålet er at tilbyde mennesker et meningsfuldt 
     praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet.Siden 
     blev det videreført som en boligsocial indsat i Ishøj og Rødovre.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie6">
-  <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
-  <h3>2020</h3> <h4>Nørrebro</h4>
-  <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
+<article id="historie6">
+  <div>
+   <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
+  </div>
+  <div>
+   <h3>2020</h3> <h4>Nørrebro</h4>
+   <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
     udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og 
     plantefarve får kvinderne et fast holdepunkt i deres hverdag - og tonsvis af kasserede 
     tekstiler får nyt liv i I Tråd Med Verdens smukke designs.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie7">
-  <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
-  <h3>2022</h3> <h4>Farum</h4>
-  <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
+<article id="historie7">
+  <div>
+   <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
+  </div>
+  <div>
+   <h3>2022</h3> <h4>Farum</h4>
+   <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
     Midtpunkt. I Tråd Med Verden er et tekstilværksted, hvor der arbejdes med syning, broderi, 
     plantefarvning og upcycling af kasserede tekstiler. Produkterne sælges til virksomheder og 
     private, og virksomheden indgår desuden i kunstprojekter og samarbejder med museer.</p>
+  </div>
 </article>
 
-<article class="slide-card" id="historie8">
-  <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
-  <h3>2023</h3> <h4>Nørrebro</h4>
-  <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
+<article id="historie8">
+  <div>
+   <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
+  </div>
+   <h3>2023</h3> <h4>Nørrebro</h4>
+   <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
      gennem jobcentre, fondsmidler og via salg fra butik og webshop. ITMV hjælper folk der har 
      været ramt af depression eller sygdom. Her bliver arbejdet tilpasset de udfordringer, den 
      enkelte har, så personen stille og roligt udvikler sig i arbejdet. ITMV producerer gardiner,
      puder, tehætter og meget mere af genbrugsmaterialer, som sælges til private og på bestilling
      til virksomheder.</p>
+  </div>
 </article>
 </section>
 
+
 <style>
-.section_slide-card{
-  display:flex;
-  align-items: left;
-  justift-content: left;
+.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h3,
+.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h4 {
+    display: inline;
+    padding-right: 1.2rem; 
+}
+.s#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
+  margin: .6rem 0rem 2rem 0rem;
+}
+.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+  margin-bottom: 1.5rem;
 }
 
+#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8  {
+  border-color: rgb(114, 180, 180);
+ border: 3rem
+   position: absolute;
+  top: 15;
+  left: 100%; /* Start off-screen */
+  transition: left 0.5s ease-in-out;
+  width: 300px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background-color: #d13e3e; /* Adjust background color as needed */
+  z-index: 0; /* Ensure the card appears beneath the heart icon */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth*/ 
+ }
 
 
-.section_slide-card
 @media (min-width: 768px) {
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
 
   }
 }
 
-</style> -->
+</style>
