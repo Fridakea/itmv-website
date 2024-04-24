@@ -1,6 +1,4 @@
----
-import MainLayout from "../layouts/Main-layout.astro";
----
+
 
 <article class="content">
   <h2>HVORDAN KAN I STØTTE?</h2>
@@ -9,26 +7,30 @@ import MainLayout from "../layouts/Main-layout.astro";
     <p class="p2">En partner virksomhed kan booke en værkstedsplads hos os, hvilket giver os mulighed for at ansætte en eller flere syerske til en specifik produktion. Dermed skaber vi i fællesskab job til mennesker på kanten af arbejdsmarkedet og giver dem mulighed for at deltage i et givende arbejdsfællesskab. Vær med til at støtte vores arbejde med at skabe livskvalitet gennem design og arbejdsfællesskab, så vi sammen kan skabe fremtidens bæredygtige tekstilvirksomhed med social ansvarlighed som kompas.</p>
   </section>
   <section class="icons">
-    <button class="partner">
-      <img src="img/partner.svg" alt="..." />
-      <a href="https://www.itmv.dk/pages/samarbejde">
+<div class="partner">
+      <a href="https://www.itmv.dk/pages/samarbejde"/>
+      <img class="icon" src="img/partner.svg" alt="..." />
       <p>PARTNERSKAB</p>
-    </button>
-    <button class="repair">
-      <img src="img/repairservice.svg" alt="..." />
-      <a href="https://www.itmv.dk/pages/repair-service">
+      </a>
+    </div>
+    <div class="repair">
+      <a href="https://www.itmv.dk/pages/repair-service"/>
+      <img class="icon" src="img/repairservice.svg" alt="..." />
       <p>REPAIR SERVICE</p>
-    </button>
-    <button class="shop">
-      <img src="img/shop.svg" alt="..." />
-      <a href="https://www.itmv.dk/collections/all">
+      </a>
+      </div>
+    <div class="shop">
+      <a href="https://www.itmv.dk/collections/all"/>
+      <img class="icon" src="img/shop.svg" alt="..." />
       <p>SHOP</p>
-    </button>
-    <button class="lecture">
-      <img src="img/lecture.svg" alt="..." />
-      <a href="https://www.itmv.dk/pages/foredrag-rundvisning">
+      </a>
+      </div>
+      <div class="lecture">
+      <a href="https://www.itmv.dk/pages/foredrag-rundvisning"/>
+      <img class="icon" src="img/lecture.svg" alt="..." />
       <p>FOREDRAG</p>
-    </button>
+      </a>
+      </div>
   </section>
 </article>
 
@@ -41,7 +43,8 @@ import MainLayout from "../layouts/Main-layout.astro";
     }
     .icons {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(auto-fit, minmax(500px, 2fr));
+      justify-items: center;
       gap: 20px;
     }
     .paragraph p {
@@ -60,6 +63,12 @@ import MainLayout from "../layouts/Main-layout.astro";
       margin-top: 3%;
       margin-bottom: 3%;
     }
+    .icons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(500px));
+      justify-items: center;
+      gap: 20px;
+    }
   }
 
   article h2 {
@@ -67,26 +76,23 @@ import MainLayout from "../layouts/Main-layout.astro";
     text-align: center;
   }
 
-  .icons button {
-    border: none;
-    background-color: transparent;
-  }
-
-  button img {
+  .icons img {
     max-width: 157px;
   }
 
-  button p {
+  .icons p {
     color: var(--secondary-color);
     font-family: Helvetica;
+    text-align: center;
   }
 
   a {
     text-decoration: none;
   }
 
-button:hover {
+.icon:hover {
   transform: scale(1.1);
+  cursor: pointer;
 }
 
 </style>
