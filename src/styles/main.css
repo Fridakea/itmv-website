@@ -87,10 +87,6 @@ a {
     max-width: 1200px;
     padding: var(--spacing-medium);
     margin: auto;
-
-    & div {
-        margin-bottom: calc(var(--spacing-large) * 2);
-    }
 }
 
 /* Classnames for flex, grid and alignment */

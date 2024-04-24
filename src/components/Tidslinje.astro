@@ -1,29 +1,181 @@
 ---
 import "../styles/main.css";
 ---
-  <div>
-    <img src="img/stipletlinje.svg" alt="Snoet stiplet grøn ITMV tidslinje" class="timeline" />
+
+<div class="timeline">
+  <img
+    class="line"
+    src="img/stipletlinje.svg"
+    alt="Snoet stiplet grøn ITMV tidslinje"
+  />
+  <div id="hearticon1">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
 
-  <style>
-  .timeline {
-  height: 20rem;
-  width: 34rem;
-  transform: rotate(90deg);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 18rem;
-  margin-left:-3rem;
-  margin-bottom: 18rem;
-}
-@media (min-width: 768px) {
-  .timeline{
-  transform: rotate(0deg);
-  width: min-content;
-  margin-left:6rem;
-}
-}
-  </style>
-  
+  <div id="hearticon2">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
 
+  <div id="hearticon3">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+
+  <div id="hearticon4">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+
+  <div id="hearticon5">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+
+  <div id="hearticon6">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+
+  <div id="hearticon7">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+
+  <div id="hearticon8">
+    <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+  </div>
+</div>
+
+<style>
+  .timeline {
+    width: 100%;
+    margin: calc(var(--spacing-large) * 2) 0 calc(var(--spacing-large) * 2.5) 0;
+    aspect-ratio: 1 / 1;
+    position: relative;
+
+    & .line {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      transform: rotate(90deg);
+    }
+  }
+
+  .timeline div {
+    width: 15%;
+    margin: 0;
+    position: absolute;
+    animation-name: hearticon-animation;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+  }
+
+  #hearticon1 {
+    bottom: 86%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hearticon2 {
+    bottom: 89%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hearticon3 {
+    bottom: 72%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hearticon4 {
+    bottom: 60%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hearticon5 {
+    bottom: 46%;
+    left: 37%;
+    transform: translate(-50%, -50%);
+  }
+  #hearticon6 {
+    bottom: 27%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+  }
+
+  #hearticon7 {
+    bottom: 12%;
+    left: 53%;
+    transform: translate(-50%, -50%);
+  }
+  #hearticon8 {
+    bottom: -5%;
+    left: 31%;
+    transform: translate(-50%, -50%);
+  }
+
+  @keyframes hearticon-animation {
+    0% {
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+  @media (min-width: 768px) {
+    .timeline {
+      aspect-ratio: 2.5 / 1;
+      margin-top:;
+
+      & .line {
+        transform: rotate(0deg);
+      }
+    }
+
+    #hearticon1 {
+      bottom: 75%;
+      left: -3%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon2 {
+      bottom: 15%;
+      left: -5%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon3 {
+      bottom: 2%;
+      left: 17%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon4 {
+      bottom: 65%;
+      left: 25%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon5 {
+      bottom: 25%;
+      left: 38%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon6 {
+      bottom: 12%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon7 {
+      bottom: 57%;
+      left: 73%;
+      transform: translate(-50%, -50%);
+    }
+
+    #hearticon8 {
+      bottom: -6%;
+      left: 92%;
+      transform: translate(-50%, -50%);
+    }
+  }
+</style>
