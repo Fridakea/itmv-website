@@ -2,7 +2,7 @@
 import MainLayout from "../layouts/Main-layout.astro";
 import Footer from "../components/Footer.astro";
 import Accordions from "../components/Accordions.astro";
-/* import Cards from "../components/Cards.astro"; */
+import Cards from "../components/Cards.astro";
 import PromoteBanner from "../components/Promote-banner.astro";
 import DifferenceSection from "../components/Difference-section.astro";
 import Tidslinje from "../components/Tidslinje.astro";
@@ -24,6 +24,10 @@ import HeroVideo from "../components/heroVideo.astro";
     <DonerSticky />
 
     <div class="content">
+      <!-- <p>
+        Alt indhold skal være inde i denne div - undtagen footer, banner og
+        hero-section - Så det har en max-bredde
+      </p> -->
       <ItmvSection />
       <DifferenceSection />
       <Companies />
@@ -37,12 +41,13 @@ import HeroVideo from "../components/heroVideo.astro";
         <h2>Læs mere om vores kvinders<br /> unikke historie</h2>
         <article class="womenArticles">
           <IraCard name="IRA" description="haha" />
-          <OlenaCard />
-          <ZoulikhaCard />
+          <OlenaCard name="OLENA" />
+          <ZoulikhaCard name="ZOULIKHA" />
         </article>
       </section>
 
-      <!-- <Cards /> -->
+      <Accordions />
+      <Cards />
       <Stoettesection />
       <Button size="large">GIV ET BIDRAG</Button>
       <Accordions />

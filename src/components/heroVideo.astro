@@ -3,13 +3,25 @@
 ---
 <div class="heroVideo">
   <video autoplay muted loop>
-    <source src="/img/hero_itmv_webm" type="video/webm">
+    <source src="https://saaa.dk/kea/09_indhold/hero_itmv.webm" type="video/webm">
   </video>
   
-    <div class="heroContent">
-      <h1>I tråd med verden</h1>
-    </div>
+  <div class="heroContent">
+    <h1>I tråd med verden</h1>
   </div>
+
+
+  <div class="scrollDownArrow">
+    <a href="#nextSection">
+      <img src="/img/arrow.png" alt="Scroll Down">
+    </a>
+  </div>
+</div>
+
+
+<div id="nextSection">
+
+</div>
 
 
   <style>
@@ -37,5 +49,41 @@
     text-align: center;
     z-index: 1;
   }
-  
+  .scrollDownArrow {
+  position: absolute;
+  bottom: 20px; 
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scrollDownArrow img {
+  width: 125px;
+  height: auto;
+  cursor: pointer;
+  animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px); 
+  }
+}
 </style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const scrollDownArrow = document.querySelector('.scrollDownArrow');
+
+  scrollDownArrow.addEventListener('click', function(event) {
+    event.preventDefault(); 
+
+    const nextSection = document.getElementById('nextSection');
+    const yOffset = nextSection.getBoundingClientRect().top + window.pageYOffset;
+
+    window.scrollTo({ top: yOffset, behavior: 'smooth' });
+  });
+});
+</script>
