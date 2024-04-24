@@ -25,11 +25,11 @@ const city = Astro.props.city; */
     <slot />
 </article> -->
 <section class="slide-card">
-  <article id="historie1">
+<article id="historie1">
    <div>
     <Image src={itmvIshojImage} alt="ITMVs spirende start" />
    </div>
-   <div>
+   <div class="card-text">
     <h3>2010</h3> <h4>Ishøj</h4>
     <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i 
       samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial 
@@ -41,7 +41,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
   </div>
-  <div>
+  <div class="card-text">
    <h3>2012</h3> <h4>Rødovre</h4>
    <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
     hjælp til f.eks. brug af computer og Nem-ID, der blev snakket om samfundet og nogle 
@@ -54,7 +54,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
   </div>
-  <div>
+  <div class="card-text">
    <h3>2018</h3> <h4>Gladsaxe</h4>
    <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
     tekstil- og håndarbejds-produktion for den socialøkonomiske virksomhed I Tråd Med Verden 
@@ -67,7 +67,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvGladsaxe2Image} alt="RSV icon" />
   </div>
-  <div>
+  <div class="card-text">
    <h3>2018</h3> <h4>Gladsaxe</h4>
    <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
     beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler 
@@ -81,7 +81,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
   </div>
-  <div>
+  <div class="card-text">
   <h3>2019</h3> <h4>Amager</h4>
   <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
     i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med 
@@ -96,7 +96,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
   </div>
-  <div>
+  <div class="card-text">
    <h3>2020</h3> <h4>Nørrebro</h4>
    <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
     udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og 
@@ -109,7 +109,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
   </div>
-  <div>
+  <div class="card-text">
    <h3>2022</h3> <h4>Farum</h4>
    <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
     Midtpunkt. I Tråd Med Verden er et tekstilværksted, hvor der arbejdes med syning, broderi, 
@@ -122,6 +122,7 @@ const city = Astro.props.city; */
   <div>
    <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
   </div>
+  <div class="card-text">
    <h3>2023</h3> <h4>Nørrebro</h4>
    <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
      gennem jobcentre, fondsmidler og via salg fra butik og webshop. ITMV hjælper folk der har 
@@ -135,6 +136,14 @@ const city = Astro.props.city; */
 
 
 <style>
+  .slide-card{
+    display: flex;
+    transition: 0.3s;
+  }
+  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8{
+    display: flex;
+  }
+
 .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h3,
 .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h4 {
     display: inline;
@@ -147,25 +156,31 @@ const city = Astro.props.city; */
   margin-bottom: 1.5rem;
 }
 
-#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8  {
-  border-color: rgb(114, 180, 180);
- border: 3rem
-   position: absolute;
-  top: 15;
-  left: 100%; /* Start off-screen */
-  transition: left 0.5s ease-in-out;
-  width: 300px; /* Adjust width as needed */
-  height: 200px; /* Adjust height as needed */
-  background-color: #d13e3e; /* Adjust background color as needed */
-  z-index: 0; /* Ensure the card appears beneath the heart icon */
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth*/ 
- }
-
 
 @media (min-width: 768px) {
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
-
+  .slide-card{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    margin: 0;
   }
+  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8{
+    display: flex;
+    border: 1px solid green;
+    padding:
+    width: 6rem;
+  }
+  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+    width: 70%;
+    padding: 0%;
+
+}
+.card-text {
+    width:45%;
+  margin-bottom: 1.5rem;
+  padding-top: 1rem;
+  padding-left: 2rem;
+}
 }
 
 </style>

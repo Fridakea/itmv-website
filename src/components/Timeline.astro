@@ -1,0 +1,254 @@
+---
+import "../styles/main.css";
+---
+<section class="timline">
+ <!-- hearts -->   
+   <div class="heart-icon" id="hearticon1">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon2">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon3">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon4">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon5">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon6">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon7">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    
+    <div class="heart-icon" id="hearticon8">
+      <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
+    </div>
+    <!-- line -->
+    <div>
+        <img src="img/stipletlinje.svg" alt="Snoet stiplet grøn ITMV tidslinje" class="dashedtimeline" />
+      </div>
+    <!-- info -->
+    <div class="year_info" id="year1">
+        <h3>2010</h3><h4>Ishøj</h4>
+    </div>
+    
+    <div class="year_info" id="year2">
+      <h3>2012</h3><h4>Rødovre</h4>
+    </div>
+    
+    <div class="year_info" id="year3">
+    <h3>2018</h3> <h4>GLADSAXE</h4>
+    </div>
+    
+    <div class="year_info" id="year4">
+    <h3>2018</h3> <h4>GLADSAXE</h4>
+    </div>
+    
+    <div class="year_info" id="year5">
+    <h3>2019</h3> <h4>AMAGER</h4>
+    </div>
+    
+    <div class="year_info" id="year6">
+    <h3>2020</h3> <h4>NØRREBRO</h4>
+    </div>
+    
+    <div class="year_info" id="year7">
+    <h3>2022</h3> <h4>FARUM</h4>
+    </div>
+    
+    <div class="year_info" id="year8">
+    <h3>2023</h3> <h4>NØRREBRO</h4> 
+    </div>
+</section>
+<!-- ----------------------------------------------- -->
+<style>
+.timline{
+    display: grid;
+    grid-row: 1;
+    grid-column: 1;
+}
+/* mobil */
+.heart-icon {
+      width: 6.3rem;
+      position: absolute;
+      animation-name: hearticon-animation;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+}
+@keyframes hearticon-animation {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(0.7);
+  }
+}
+/* hearts */
+#hearticon1 {
+      top: 500%;
+      left: 58%;
+      /* background-color: blueviolet;   */
+    }
+    #hearticon2 {
+      top: 501%;
+      left: 28%;
+    }
+    #hearticon3 {
+      top: 514%;
+      left: 26%
+    }
+    #hearticon4 {
+      top: 521%;
+      left: 52%;
+    }
+    #hearticon5 {
+      top: 533%;
+      left: 30%;
+    }
+    #hearticon6 {
+      top: 551%;
+      left: 34%;
+    }
+    #hearticon7 {
+      top: 564%;
+      left: 55%;
+    }
+    #hearticon8 {
+      top: 576%;
+      left: 24%
+    }
+
+     /*  line */
+    @media (max-width: 768px) {
+   .dashedtimeline {
+   transform: rotate(90deg);
+   width: 140%;
+   margin-top: 84%;
+   margin-left: -20%;
+   /* background-color: blue; */
+   }
+   }
+
+   /*  info */
+    #year1 {
+      
+      text-align: center;
+      line-height: 25%;
+      top: 30%; /* kan ikke flytte den op eller ned */
+      left: 0%;
+      background-color: rgb(140, 37, 0);
+    }
+     #year2 {
+      text-align: center;
+      line-height: 25%;
+      top: 608%;
+      left: 37%;  
+      /* background-color: blue;  */
+    }
+    #year3 {
+      text-align: center;
+      line-height: 25%;
+      top: 628%;
+      left: 10%;
+    }
+    #year4 {
+      text-align: center;
+      line-height: 25%;
+      top: 639%;
+      left: 69%;
+    }
+    #year5 {
+      text-align: center;
+      line-height: 25%;
+      top: 648%;
+      left: 20%;  
+    }
+    #year6 {
+      text-align: center;
+      line-height: 25%;
+      top: 658%;
+      left: 50%;  
+    }
+    #year7 {
+      text-align: center;
+      line-height: 25%;
+      top: 674%;
+      left: 65%; 
+    }
+    #year8 {
+      text-align: center;
+      line-height: 25%;
+      top: 690%;
+      left: 35%; 
+    }
+
+   @media (min-width: 768px) {
+      .heart-icon {
+      width: 8.3rem;
+      position: absolute;
+      animation-name: hearticon-animation;
+      animation-duration: 1s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      
+}
+    #hearticon1 {
+      top: 395%;
+      left: 15%;
+      background-color: rgb(161, 161, 190);
+    }
+    #hearticon2 {
+      top: 421%;
+      left: 14%;
+    }
+    #hearticon3 {
+      top: 433%;
+      left: 25%;
+    }
+    #hearticon4 {
+      top: 400%;
+      left: 33%;
+    }
+    #hearticon5 {
+      top: 410%;
+      left: 44%;
+    }
+    #hearticon6 {
+      top: 430%;
+      left: 55%;
+    }
+    #hearticon7 {
+      top: 400%;
+      left: 67%;
+    }
+    #hearticon8 {
+      top: 430%;
+      left: 80%;
+    }
+    }
+/* desk  */
+    @media (min-width: 768px) {
+  .timeline{
+  transform: rotate(0deg);
+  width: min-content;
+  margin-top: 84%;
+  margin-left: 6rem;
+  background-color: rgb(193, 66, 207);
+}
+}
+
+
+
+</style>
