@@ -4,12 +4,12 @@ import "../styles/main.css";
 /* const year = Astro.props.year;
 const city = Astro.props.city; */
 ---
-<section>
-<article class="year_info" id="year1"></articleclass>
+<section class="info">
+<article class="year_info" id="year1">
     <h3>2010</h3><h4>Ishøj</h4>
 </article>
 
-<article class="year_info" id="year2"></articleclass>
+<article class="year_info" id="year2">
   <h3>2012</h3><h4>Rødovre</h4>
 </article>
 
@@ -40,7 +40,7 @@ const city = Astro.props.city; */
 
   <style>
 
-    .section{
+    .info {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -52,20 +52,18 @@ const city = Astro.props.city; */
       position:absolute;
       text-align: center;
       line-height: 25%;
-      top: 612%;
-      left: 37%;   
-
-      top: 612%;
-      left: 57%;  
-      background-color: rgb(27, 25, 184);   
+      top: 332%;
+      left: 37%;    
+      background-color: rgb(49, 184, 25);  
+      
     }
-    #year2 {
+     #year2 {
       position:absolute;
       text-align: center;
       line-height: 25%;
       top: 608%;
       left: 57%;  
-      background-color: blue; 
+      background-color: rgb(4, 184, 25); 
     }
     #year3 {
       position:absolute;
@@ -73,6 +71,7 @@ const city = Astro.props.city; */
       line-height: 25%;
       top: 280%;
       left: 18%;
+      background-color: rgb(72, 109, 66); 
     }
     #year4 {
       position:absolute;
@@ -127,6 +126,7 @@ const city = Astro.props.city; */
       top: 155%;
       left: 35%;
       background-color: rgb(45, 131, 102); 
+      z-index: 99; 
     }
     #year2 {
       position:absolute;
