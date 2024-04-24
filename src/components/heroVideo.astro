@@ -1,6 +1,7 @@
 ---
 
 ---
+
 <div class="heroVideo">
   <video autoplay muted loop>
     <source src="https://saaa.dk/kea/09_indhold/hero_itmv.webm" type="video/webm">
@@ -16,15 +17,29 @@
       <img src="/img/arrow.png" alt="Scroll Down">
     </a>
   </div>
+  <div class="logo">
+    <a href="https://www.itmv.dk/"><img src="/img/logo.png"></a>
+    </div>
 </div>
 
 
 <div id="nextSection">
-
 </div>
 
 
   <style>
+.logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.logo img {
+  width: 100px; /* Adjust as needed */
+  height: auto;
+  z-index: 100;
+}
+    
   .heroVideo {
     position: relative;
     width: 100%;
