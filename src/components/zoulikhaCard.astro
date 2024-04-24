@@ -5,7 +5,7 @@ const { description, name } = Astro.props;
 
 <article class="woman-component">
   <img class="visible" src="/img/Zoulikha.webp" alt="Woman Image">
-  <p class="hidden"><span class="cap">{ name }</span> { description }</p>
+  <p class="hidden"><span class="cap"></span> { description }</p>
 </article>
 
 <style>
@@ -33,6 +33,8 @@ const { description, name } = Astro.props;
 }
 
 .woman-component p {
+  display: flex;
+  align-items: center;
   background-color: #F1ECEC;
   position: absolute;
   top: 0;
