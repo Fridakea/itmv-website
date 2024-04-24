@@ -146,3 +146,11 @@ a {
 .mt-l {
     margin-top: var(--spacing-large);
 }
+
+.womenArticles {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--spacing-medium)
+    
+}
