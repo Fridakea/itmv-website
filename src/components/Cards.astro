@@ -26,10 +26,10 @@ const city = Astro.props.city; */
     <Image src={itmvIshojImage} alt="ITMVs spirende start" />
    </div>
    <div class="card-text">
-    <h3>2010</h3> <h4>Ishøj</h4>
+    <h3>2010</h3><h4>Ishøj</h4>
     <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i 
       samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial 
-      indsat i Ishøj og Rødovre</p>
+      indsat i Ishøj og Rødovre.</p>
    </div>
 </article>
 
@@ -131,12 +131,13 @@ const city = Astro.props.city; */
 </article>
 </section>
 
-
 <style>
-  .slide-card{
+  .slide-card {
     display: flex;
+    flex-direction: column;
     transition: 0.3s;
-    width:100%;
+    width: 100%;
+    overflow: hidden;
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
@@ -144,10 +145,9 @@ const city = Astro.props.city; */
     background-color: var(--primary-color);
     max-width: 100%;
     padding-left: 0;
-    /* overflow: hidden; */
+    
   }
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h3,
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h4 {
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8, h3 h4 {
     display: inline;
   }
 #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
@@ -157,38 +157,26 @@ const city = Astro.props.city; */
   margin-bottom: 1.5rem;
 }
 
-.slide-card{
-    display: flex;
-    flex-direction: column;
-    transition: 0.3s;
-   /*  overflow: hidden; */
-    /* justify-content: center; */
- /*    -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
-  }
-  #historie, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
-    width: 100%;
-    max-height: 100%;
-    padding: 0%;
-
-}
 .card-text {
   max-width:100%;
-  /* margin-bottom: 1.5rem; */
   padding: 0.8rem;
   max-height: 100%;
 }
+.card-text h3, h4 {
+  display: inline-block;
 
+}
 
+/* 
 @media (min-width: 768px) {
   .slide-card{
     display: flex;
     flex-direction: column;
     transition: 0.3s;
-   /*  overflow: hidden; */
-    /* justify-content: center; */
+   /*  overflow: hidden; *
+    /* justify-content: center; *
  /*    -ms-transform: translateY(-50%);
-  transform: translateY(-50%); */
+  transform: translateY(-50%); *
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
@@ -196,7 +184,7 @@ const city = Astro.props.city; */
     background-color: var(--primary-color);
     max-width: 60%;
     padding-left: 0;
-    /* overflow: hidden; */
+    /* overflow: hidden; *
   }
   
   #historie, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
@@ -207,11 +195,11 @@ const city = Astro.props.city; */
 }
 .card-text {
   max-width:45%;
-  /* margin-bottom: 1.5rem; */
+  /* margin-bottom: 1.5rem; *
   padding-top: 1rem;
   padding-left: 2rem;
   max-height: 100%;
 }
 }
-
+ */
 </style>
