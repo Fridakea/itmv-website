@@ -5,11 +5,11 @@ import { Image } from "astro:assets";
 import itmvIshojImage from "../images/ishoj_itmv.jpg";
 import itmvRodovreImage from "../images/rodovre_itmv.jpg";
 import itmvGladsaxe1Image from "../images/gladsaxe1itmv.jpg";
-import itmvGladsaxe2Image from "../images/gladsaxe2_itmv.jpg";
+import itmvGladsaxe3Image from "../images/gladsaxe3_itmv.jpg";
 import itmvAmagerImage from "../images/amager_itmv.jpg";
 import itmvNorrebroImage from "../images/norrebro1_itmv.jpg";
 import itmvFarumImage from "../images/farum_itmv.jpg";
-import itmvNorrebro2Image from "../images/norrebro2_itmv.jpg";
+import teamet from "../images/teamet.jpg";
 
 /*const year = Astro.props.year;
 const city = Astro.props.city;
@@ -20,10 +20,6 @@ const text = Astro.props.text;
 const city = Astro.props.city; */
 ---
 
-<!-- <article>
-    <h3>year</h3><h4>city</h4>
-    <slot />
-</article> -->
 <section class="slide-card">
 <article id="historie1">
    <div>
@@ -65,15 +61,16 @@ const city = Astro.props.city; */
 
 <article id="historie4">
   <div>
-   <Image src={itmvGladsaxe2Image} alt="RSV icon" />
+   <Image src={itmvGladsaxe3Image} alt="RSV icon" />
   </div>
   <div class="card-text">
    <h3>2018</h3> <h4>Gladsaxe</h4>
    <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
     beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler 
     og producerer interieurprodukter og tekstildesign, som sælges dels til virksomhedskunder, 
-    dels i vores webshop. Formålet med produktionen er at beskæftige mennesker på kanten af 
-    arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab.</p>
+    dels i vores webshop. <!-- Formålet med produktionen er at beskæftige mennesker på kanten af 
+    arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab. </p>
+    arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab. --></p>
   </div>
 </article>
 
@@ -86,9 +83,9 @@ const city = Astro.props.city; */
   <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
     i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med 
     Københavns Jobcenter om en beskæftigelsesindsats, således at man kan blive tilknyttet 
-    værkstedet gennem et praktikforløb. Formålet er at tilbyde mennesker et meningsfuldt 
-    praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet.Siden 
-    blev det videreført som en boligsocial indsat i Ishøj og Rødovre.</p>
+    værkstedet gennem et praktikforløb. <!--Formålet er at tilbyde mennesker et meningsfuldt 
+    praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet. Siden 
+    blev det videreført som en boligsocial indsat i Ishøj og Rødovre. --></p>
   </div>
 </article>
 
@@ -120,7 +117,7 @@ const city = Astro.props.city; */
 
 <article id="historie8">
   <div>
-   <Image src={itmvNorrebro2Image} alt="ITMV teamet" />
+   <Image src={teamet} alt="ITMV teamet" />
   </div>
   <div class="card-text">
    <h3>2023</h3> <h4>Nørrebro</h4>
@@ -139,21 +136,47 @@ const city = Astro.props.city; */
   .slide-card{
     display: flex;
     transition: 0.3s;
+    width:100%;
   }
-  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8{
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
+    border: 1px solid green;
+    background-color: var(--primary-color);
+    max-width: 100%;
+    padding-left: 0;
+    /* overflow: hidden; */
   }
-
-.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h3,
-.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h4 {
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h3,
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 h4 {
     display: inline;
-    padding-right: 1.2rem; 
-}
-.s#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
+  }
+#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
   margin: .6rem 0rem 2rem 0rem;
 }
-.#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
   margin-bottom: 1.5rem;
+}
+
+.slide-card{
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+   /*  overflow: hidden; */
+    /* justify-content: center; */
+ /*    -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
+  }
+  #historie, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+    width: 100%;
+    max-height: 100%;
+    padding: 0%;
+
+}
+.card-text {
+  max-width:100%;
+  /* margin-bottom: 1.5rem; */
+  padding: 0.8rem;
+  max-height: 100%;
 }
 
 
@@ -162,24 +185,32 @@ const city = Astro.props.city; */
     display: flex;
     flex-direction: column;
     transition: 0.3s;
-    margin: 0;
+   /*  overflow: hidden; */
+    /* justify-content: center; */
+ /*    -ms-transform: translateY(-50%);
+  transform: translateY(-50%); */
   }
-  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8{
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
     border: 1px solid green;
-    padding:
-    width: 6rem;
+    background-color: var(--primary-color);
+    max-width: 60%;
+    padding-left: 0;
+    /* overflow: hidden; */
   }
-  .#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
-    width: 70%;
+  
+  #historie, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+    width: 100%;
+    max-height: 100%;
     padding: 0%;
 
 }
 .card-text {
-    width:45%;
-  margin-bottom: 1.5rem;
+  max-width:45%;
+  /* margin-bottom: 1.5rem; */
   padding-top: 1rem;
   padding-left: 2rem;
+  max-height: 100%;
 }
 }
 

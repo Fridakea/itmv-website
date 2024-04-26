@@ -4,6 +4,7 @@ import Footer from "../components/Footer.astro";
 import Accordions from "../components/Accordions.astro";
 import PromoteBanner from "../components/Promote-banner.astro";
 import DifferenceSection from "../components/Difference-section.astro";
+import Cards from "../components/Cards.astro";
 import Tidslinje from "../components/Tidslinje.astro";
 import ItmvSection from "../components/ItmvSection.astro";
 import Companies from "../components/Companies.astro";
@@ -28,23 +29,21 @@ import HeroVideo from "../components/heroVideo.astro";
       <Companies />
       <Esg />
     </div>
+    
     <PromoteBanner />
 
     <div class="content">
-      
       <Tidslinje />
+      <Cards/>
       <section id="womenSection">
         <h2>Læs mere om vores kvinders<br> unikke historie</h2>
-      <article class="womenArticles">
+       <article class="womenArticles">
         <IraCard name="IRA" description="IRA er krigsflygtninge fra Ukraine, hvor hun med en baggrund som syerske virkelig kan biddrage til at rekonsturere og genanvende forlagte tekstiler. Arbejdet som syerske har for Ira åbnet døre til nye sociale netværk og muligheder for personlig udvikling, hvilket har været afgørende for hendes trivsel og livskvalitet." />
         <OlenaCard name="OLENA" description="OLENA er flygtet fra krigen i Ukraine, hvor en stor del af hendes familie fortsat er under konflikten med Rusland. Som syerske hos I TRÅD MED VERDEN har Olena mulighed for at abstrahere fra hverdagens rædsler, med arbejde som hun også finder meningsfyldt. Olena udfører en række forskellige arbejdsopgaversom at skabe smukke og funktionelle tekstiler."/>
         <ZoulikhaCard name="ZOULIKHA" description="ZOULIKHA har med et fleksjob hos I TRÅD MED VERDEN på Nørrebro, fundet en vej til arbejdslivet, der ikke blot bringer en løn, men også en følelse af formål og værdi. Her syr og håndbroder hun bl.a. de finste marokkanske-inspirerede kroner, der har givet hende kaldenavnet Dronningen af Lundtoftegade."/>
-      </article>
-    </section>
+       </article>
+      </section>
         
-      
-
-     
       <Stoettesection />
       <Button size="large">GIV ET BIDRAG</Button>
       <Accordions />
