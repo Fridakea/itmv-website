@@ -95,7 +95,7 @@ const city = Astro.props.city; */
   </div>
   <div class="card-text">
    <h3>2020</h3> <h4>Nørrebro</h4>
-   <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro ,der med håndarbejde hjælper 
+   <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro, der med håndarbejde hjælper 
     udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og 
     plantefarve får kvinderne et fast holdepunkt i deres hverdag - og tonsvis af kasserede 
     tekstiler får nyt liv i I Tråd Med Verdens smukke designs.</p>
@@ -116,7 +116,7 @@ const city = Astro.props.city; */
 </article>
 
 <article id="historie8">
-  <div class="card-img">
+  <div>
    <Image src={teamet} alt="ITMV teamet" />
   </div>
   <div class="card-text">
@@ -144,17 +144,14 @@ const city = Astro.props.city; */
     background-color: var(--primary-color);
     max-width: 100%;
     padding-left: 0;
-  }
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8, h3 h4 {
     display: inline;
   }
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
+  #historie1 p, #historie2 p, #historie3 p, #historie4 p, #historie5 p, #historie6 p, #historie7 p, #historie8 p {
   margin: .6rem 0rem 2rem 0rem;
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
   margin-bottom: 1.5rem;
   }
-
   .card-text {
   max-width:100%;
   padding: 0.8rem;
@@ -163,56 +160,28 @@ const city = Astro.props.city; */
   .card-text h3, h4 {
   display: inline-block;
   }
-
-
 @media (min-width: 768px) {
 .slide-card {
     display: flex;
     transition: 0.3s;
     width: 60%;
-    background-color: blue;
-    /* overflow: hidden; */
+     overflow: hidden;
+ /* -ms-transform: translateY(-50%);
+  transform: translateY(-50%);  */
+ 
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
     background-color: var(--primary-color);
   }
+  #historie1 p, #historie2 p, #historie3 p, #historie4 p, #historie5 p, #historie6 p, #historie7 p, #historie8 p {
+  margin: 0.2rem 0.5rem;
+  }
+  #historie1 h3, #historie2 h3, #historie3 h3, #historie4 h3, #historie5 h3, #historie6 h3, #historie7 h3, #historie8 h3 {
+    margin: 0.5rem;
+  }
   .card-text {
   width: 80%;
-  /* padding: 0.8rem; */
-  background-color: rgb(43, 169, 169);
   }
- /*  .card-text h3, h4 {
-  display: inline-block;
-  } */
 }
-/* 
-{
-  .slide-card{
-    /* justify-content: center; *
- /*    -ms-transform: translateY(-50%);
-  transform: translateY(-50%); *
-  }
-  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
-    border: 1px solid green;
-    max-width: 60%;
-    padding-left: 0;
-    /* overflow: hidden; *
-  }
-  
-  #historie, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
-    width: 100%;
-    max-height: 100%;
-    padding: 0%;
-
-}
-.card-text {
-  max-width:45%;
-  /* margin-bottom: 1.5rem; *
-  padding-top: 1rem;
-  padding-left: 2rem;
-  max-height: 100%;
-}
-}
- */
 </style>
