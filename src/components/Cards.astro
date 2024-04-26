@@ -26,7 +26,7 @@ const city = Astro.props.city; */
     <Image src={itmvIshojImage} alt="ITMVs spirende start" />
    </div>
    <div class="card-text">
-    <h3>2010</h3><h4>Ishøj</h4>
+    <h3>2010</h3> <h4>Ishøj</h4>
     <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i 
       samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial 
       indsat i Ishøj og Rødovre.</p>
@@ -116,16 +116,14 @@ const city = Astro.props.city; */
 </article>
 
 <article id="historie8">
-  <div>
+  <div class="card-img">
    <Image src={teamet} alt="ITMV teamet" />
   </div>
   <div class="card-text">
    <h3>2023</h3> <h4>Nørrebro</h4>
-   <p>I dag er ITMV en socialøkonomisk virksomhed med to velfungerende værksteder finansieret
-     gennem jobcentre, fondsmidler og via salg fra butik og webshop. ITMV hjælper folk der har 
-     været ramt af depression eller sygdom. Her bliver arbejdet tilpasset de udfordringer, den 
-     enkelte har, så personen stille og roligt udvikler sig i arbejdet. ITMV producerer gardiner,
-     puder, tehætter og meget mere af genbrugsmaterialer, som sælges til private og på bestilling
+   <p>I dag har ITMV to velfungerende værksteder finansieret gennem jobcentre, fondsmidler og via
+     salg fra butik og webshop. Der produceres gardiner, puder, tehætter og m.m af 
+     genbrugsmaterialer, som sælges til private og på bestilling
      til virksomheder.</p>
   </div>
 </article>
@@ -137,7 +135,8 @@ const city = Astro.props.city; */
     flex-direction: column;
     transition: 0.3s;
     width: 100%;
-    overflow: hidden;
+    min-height: 100%;
+    /* overflow: hidden; */
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
     display: flex;
@@ -145,43 +144,57 @@ const city = Astro.props.city; */
     background-color: var(--primary-color);
     max-width: 100%;
     padding-left: 0;
-    
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8, h3 h4 {
     display: inline;
   }
-#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 p {
   margin: .6rem 0rem 2rem 0rem;
-}
-#historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+  }
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
   margin-bottom: 1.5rem;
-}
+  }
 
-.card-text {
+  .card-text {
   max-width:100%;
   padding: 0.8rem;
   max-height: 100%;
-}
-.card-text h3, h4 {
+  }
+  .card-text h3, h4 {
   display: inline-block;
+  }
 
-}
 
-/* 
 @media (min-width: 768px) {
-  .slide-card{
+.slide-card {
     display: flex;
-    flex-direction: column;
     transition: 0.3s;
-   /*  overflow: hidden; *
+    width: 60%;
+    background-color: blue;
+    /* overflow: hidden; */
+  }
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
+    display: flex;
+    background-color: var(--primary-color);
+  }
+  .card-text {
+  width: 80%;
+  /* padding: 0.8rem; */
+  background-color: rgb(43, 169, 169);
+  }
+ /*  .card-text h3, h4 {
+  display: inline-block;
+  } */
+}
+/* 
+{
+  .slide-card{
     /* justify-content: center; *
  /*    -ms-transform: translateY(-50%);
   transform: translateY(-50%); *
   }
   #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
-    display: flex;
     border: 1px solid green;
-    background-color: var(--primary-color);
     max-width: 60%;
     padding-left: 0;
     /* overflow: hidden; *
