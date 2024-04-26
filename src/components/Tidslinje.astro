@@ -1,85 +1,180 @@
 ---
 import "../styles/main.css";
+
+import { Image } from "astro:assets";
+import itmvIshojImage from "../images/ishoj_itmv.jpg";
+import itmvRodovreImage from "../images/rodovre_itmv.jpg";
+import itmvGladsaxe1Image from "../images/gladsaxe1itmv.jpg";
+import itmvGladsaxe3Image from "../images/gladsaxe3_itmv.jpg";
+import itmvAmagerImage from "../images/amager_itmv.jpg";
+import itmvNorrebroImage from "../images/norrebro1_itmv.jpg";
+import itmvFarumImage from "../images/farum_itmv.jpg";
+import teamet from "../images/teamet.jpg";
 ---
 
 <div class="timeline">
-  <img
-    class="line"
-    src="img/stipletlinje.svg"
-    alt="Snoet stiplet grøn ITMV tidslinje"
-  />
+  <!-------------------------- LINE ----------------------------------->
+  <img class="line" src="img/stipletlinje.svg" alt="Snoet stiplet grøn ITMV tidslinje" />
+  <!-------------------------- HEARTS ----------------------------------->
   <div id="hearticon1">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon2">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon3">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon4">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon5">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon6">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon7">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-
   <div id="hearticon8">
     <img src="img/hjertepuls.svg" alt="Pulsende hjerteicon" />
   </div>
-<!--  -->
+  <!-------------------------- YEARS & CITY ----------------------------------->
    <article class="year_info" id="year1">
      <h3>2010</h3><h4>Ishøj</h4>
    </article>
-
    <article class="year_info" id="year2">
     <h3>2012</h3><h4>Rødovre</h4>
    </article>
-
   <article class="year_info" id="year3">
    <h3>2018</h3> <h4>GLADSAXE</h4>
   </article>
-
   <article class="year_info" id="year4">
    <h3>2018</h3> <h4>GLADSAXE</h4>
   </article>
-
   <article class="year_info" id="year5">
    <h3>2019</h3> <h4>AMAGER</h4>
   </article>
-
   <article class="year_info" id="year6">
    <h3>2020</h3> <h4>NØRREBRO</h4>
-  </article>
-
+  </article
   <article class="year_info" id="year7">
    <h3>2022</h3> <h4>FARUM</h4>
   </article>
-
   <article class="year_info" id="year8">
    <h3>2023</h3> <h4>NØRREBRO</h4> 
   </article>
+  <!-------------------------- CARDS ----------------------------------->
+  <section class="slide-card">
+    <article id="historie1">
+       <div>
+        <Image src={itmvIshojImage} alt="ITMVs spirende start" />
+       </div>
+       <div class="card-text">
+        <h3>2010</h3> <h4>Ishøj</h4>
+        <p>I 2010 startede I Tråd Med Verden op i Ishøj, som et integrationsprojekt i 
+          samarbejde med KEA og Røde Kors. Siden blev det videreført som en boligsocial 
+          indsat i Ishøj og Rødovre.</p>
+       </div>
+    </article>
+    <article id="historie2">
+      <div>
+       <Image src={itmvRodovreImage} alt="Vægbroderi i Rodovre kommune" />
+      </div>
+      <div class="card-text">
+       <h3>2012</h3> <h4>Rødovre</h4>
+       <p>I 2012 blev I Tråd Med Verden også et socialt sted, hvor kvinder kunne komme og fik 
+        hjælp til f.eks. brug af computer og Nem-ID, der blev snakket om samfundet og nogle 
+        fik øvet deres danske sprog. Desuden har en del kvinder brugt deres arbejde i I Tråd 
+        Med Verden til at styrke sine CV og finde fast arbejde.</p>
+      </div>
+    </article>
+    <article id="historie3">
+      <div>
+       <Image src={itmvGladsaxe1Image} alt="Boligforening i Gladsaxe kommune" />
+      </div>
+      <div class="card-text">
+       <h3>2018</h3> <h4>Gladsaxe</h4>
+       <p>I en kælder under Haraldskirken i Høje Gladsaxe arbejder en gruppe kvinder med forskelligt 
+        tekstil- og håndarbejds-produktion for den socialøkonomiske virksomhed I Tråd Med Verden 
+        (ITMV). Her har de holdt til siden januar 2018, hvor de indledte et samarbejde med 
+        Bolig-foreningen 3B og Gladsaxe Kommune.</p>
+      </div>
+    </article>
+    <article id="historie4">
+      <div>
+       <Image src={itmvGladsaxe3Image} alt="RSV icon" />
+      </div>
+      <div class="card-text">
+       <h3>2018</h3> <h4>Gladsaxe</h4>
+       <p>I 2018 blev vi registreret som en socialøkonomisk virksomhed, der driver syværksteder 
+        beliggende i udsatte boligområder. Vi arbejder med genanvendelse af kasserede tekstiler 
+        og producerer interieurprodukter og tekstildesign, som sælges dels til virksomhedskunder, 
+        dels i vores webshop. <!-- Formålet med produktionen er at beskæftige mennesker på kanten af 
+        arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab. </p>
+        arbejdsmarkedet og at skabe livskvalitet gennem design og arbejdsfællesskab. --></p>
+      </div>
+    </article>
+    <article id="historie5">
+      <div>
+       <Image src={itmvAmagerImage} alt="To kvinder med øjne i nakken masker" />
+      </div>
+      <div class="card-text">
+      <h3>2019</h3> <h4>Amager</h4>
+      <p>Siden februar 2019 har stofranker og andre farvestålende tekstiler prydet vinduespartierne 
+        i ITMV værksted her i Urbanplanen. Værkstedet er partnerskabets initiativ og samarbejder med 
+        Københavns Jobcenter om en beskæftigelsesindsats, således at man kan blive tilknyttet 
+        værkstedet gennem et praktikforløb. <!--Formålet er at tilbyde mennesker et meningsfuldt 
+        praktikforløb og et arbejdsfællesskab, som skal hjælpe dem ind på arbejdsmarkedet. Siden 
+        blev det videreført som en boligsocial indsat i Ishøj og Rødovre. --></p>
+      </div>
+    </article>
+    <article id="historie6">
+      <div>
+       <Image src={itmvNorrebroImage} alt="Plantefarvning af tekstiler" />
+      </div>
+      <div class="card-text">
+       <h3>2020</h3> <h4>Nørrebro</h4>
+       <p>I Tråd Med Verden er rykket til Lundtoftegade på Nørrebro, der med håndarbejde hjælper 
+        udsatte kvinder tilbage på arbejdsmarkedet sting for sting. Gennem syning, broderi og 
+        plantefarve får kvinderne et fast holdepunkt i deres hverdag - og tonsvis af kasserede 
+        tekstiler får nyt liv i I Tråd Med Verdens smukke designs.</p>
+      </div>
+    </article>
+    <article id="historie7">
+      <div>
+       <Image src={itmvFarumImage} alt="Tekstilværksted i Farum" />
+      </div>
+      <div class="card-text">
+       <h3>2022</h3> <h4>Farum</h4>
+       <p>Den 1. marts 2022 slog den Socialøkonomiske virksomhed I Tråd Med Verden dørene op i Farum 
+        Midtpunkt. I Tråd Med Verden er et tekstilværksted, hvor der arbejdes med syning, broderi, 
+        plantefarvning og upcycling af kasserede tekstiler. Produkterne sælges til virksomheder og 
+        private, og virksomheden indgår desuden i kunstprojekter og samarbejder med museer.</p>
+      </div>
+    </article>
+    <article id="historie8">
+      <div>
+       <Image src={teamet} alt="ITMV teamet" />
+      </div>
+      <div class="card-text">
+       <h3>2023</h3> <h4>Nørrebro</h4>
+       <p>I dag har ITMV to velfungerende værksteder finansieret gennem jobcentre, fondsmidler og via
+         salg fra butik og webshop. Der produceres gardiner, puder, tehætter og m.m af 
+         genbrugsmaterialer, som sælges til private og på bestilling
+         til virksomheder.</p>
+      </div>
+    </article>
+    </section>
 </div>
-
+<!-------------------------- STYLES ----------------------------------->
 <style>
   .timeline {
     width: 100%;
     margin: calc(var(--spacing-large) * 2) 0 calc(var(--spacing-large) * 2.5) 0;
     aspect-ratio: 1 / 1;
     position: relative;
-
     & .line {
       position: absolute;
       width: 100%;
@@ -87,7 +182,6 @@ import "../styles/main.css";
       transform: rotate(90deg);
     }
   }
-
   .timeline div {
     width: 15%;
     margin: 0;
@@ -97,31 +191,35 @@ import "../styles/main.css";
     animation-direction: alternate;
     animation-iteration-count: infinite;
   }
-
+  @keyframes hearticon-animation {
+    0% {
+      transform: scale(0.6);
+    }
+    100% {
+      transform: scale(0.7);
+    }
+  }
+/************************* HEARTS MOBIL ***************************/
   #hearticon1 {
     bottom: 86%;
     left: 60%;
     transform: translate(-50%, -50%);
   }
-
   #hearticon2 {
     bottom: 89%;
     left: 35%;
     transform: translate(-50%, -50%);
   }
-
   #hearticon3 {
     bottom: 72%;
     left: 29%;
     transform: translate(-50%, -50%);
   }
-
   #hearticon4 {
     bottom: 60%;
     left: 55%;
     transform: translate(-50%, -50%);
   }
-
   #hearticon5 {
     bottom: 46%;
     left: 37%;
@@ -132,7 +230,6 @@ import "../styles/main.css";
     left: 32%;
     transform: translate(-50%, -50%);
   }
-
   #hearticon7 {
     bottom: 12%;
     left: 53%;
@@ -143,6 +240,7 @@ import "../styles/main.css";
     left: 31%;
     transform: translate(-50%, -50%);
   }
+  /************************* YEARS & CITY MOBIL ***************************/
  #year1 {
       position: absolute;
       text-align: center;
@@ -207,25 +305,47 @@ import "../styles/main.css";
       left: 36%;
       transform: translate(-50%, -50%);
     }
-
-  @keyframes hearticon-animation {
-    0% {
-      transform: scale(0.6);
-    }
-    100% {
-      transform: scale(0.7);
-    }
+   /************************* CARDS MOBIL ***************************/
+  .slide-card {
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s;
+    width: 100%;
+    min-height: 100%;
+    overflow: hidden;
   }
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
+    display: flex;
+    border: 1px solid green;
+    background-color: var(--primary-color);
+    max-width: 100%;
+    padding-left: 0;
+    display: inline;
+  }
+  #historie1 p, #historie2 p, #historie3 p, #historie4 p, #historie5 p, #historie6 p, #historie7 p, #historie8 p {
+  margin: .6rem 0rem 2rem 0rem;
+  }
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 img{
+  margin-bottom: 1.5rem;
+  }
+  .card-text {
+  max-width:100%;
+  padding: 0.8rem;
+  max-height: 100%;
+  }
+  .card-text h3, h4 {
+  display: inline-block;
+  }
+
   @media (min-width: 768px) {
     .timeline {
       aspect-ratio: 2.5 / 1;
       margin-top:;
-
       & .line {
         transform: rotate(0deg);
       }
     }
-
+/************************* HEARTS PC ***************************/
     #hearticon1 {
       bottom: 75%;
       left: -3%;
@@ -236,42 +356,37 @@ import "../styles/main.css";
       left: -5%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon3 {
       bottom: 2%;
       left: 17%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon4 {
       bottom: 65%;
       left: 25%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon5 {
       bottom: 25%;
       left: 38%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon6 {
       bottom: 12%;
       left: 60%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon7 {
       bottom: 57%;
       left: 73%;
       transform: translate(-50%, -50%);
     }
-
     #hearticon8 {
       bottom: -6%;
       left: 92%;
       transform: translate(-50%, -50%);
     }
+/************************* YEARS & CITY PC ***************************/
     #year1 {
       position: absolute;
       text-align: center;
@@ -336,5 +451,30 @@ import "../styles/main.css";
       left: 106%;
       transform: translate(-50%, -50%);
     }
+/************************* CARDS PC ***************************/
+    .slide-card {
+    display: flex;
+    transition: 0.3s;
+    width: 60%;
+     overflow: hidden;
+ /* -ms-transform: translateY(-50%); */
+  transform: translatex(-10%); 
+
+  }
+  #historie1, #historie2, #historie3, #historie4, #historie5, #historie6, #historie7, #historie8 {
+    display: flex;
+    background-color: var(--primary-color);
+  }
+  #historie1 p, #historie2 p, #historie3 p, #historie4 p, #historie5 p, #historie6 p, #historie7 p, #historie8 p {
+  margin: 0.2rem 0.5rem;
+  }
+  #historie1 h3, #historie2 h3, #historie3 h3, #historie4 h3, #historie5 h3, #historie6 h3, #historie7 h3, #historie8 h3 {
+    margin: 0.5rem;
+  }
+  .card-text {
+  width: 80%;
+  }
   }
 </style>
+
+
